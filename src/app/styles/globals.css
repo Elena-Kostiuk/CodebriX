@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: var(--font-ibm-plex-mono), sans-serif;
+}
+h1, h2 {
+  font-family: var(--font-robert-trial-medium), sans-serif;
+}
+button {
+  cursor: pointer;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

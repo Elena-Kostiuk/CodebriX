@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        'ibm-plex-mono': ['var(--font-ibm-plex-mono)'],
+        'robert-trial': ['var(--font-robert-trial-medium)'],
+      },
     },
   },
   plugins: [],

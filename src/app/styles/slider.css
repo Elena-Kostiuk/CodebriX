@@ -1,0 +1,98 @@
+.custom-track {
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.track-left {
+  background-color: black;
+  height: 1px;
+}
+
+.track-right {
+  border-bottom: 1px dashed black;
+}
+
+.custom-mark {
+  width: 4px;
+  height: 12px;
+  background: black;
+  position: absolute;
+  top: -5px;
+}
+
+.custom-mark:last-child {
+  visibility: hidden;
+}
+
+.custom-thumb {
+  width: 28px;
+  height: 28px;
+  background-color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  top: -14px;
+}
+
+.blocks-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.blocks-container h3 {
+  padding-top: 50px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.blocks-container ul {
+  list-style-type: none;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 24px;
+}
+
+
+@media (max-width: 1030px) {
+  .custom-thumb {
+    width: 20px;
+    height: 20px;
+    top: -10px;
+  }
+  .track-left {
+    height: 0.8px;
+  }
+  .blocks-container {
+    display: block;
+    width: 100%;
+  }
+  .blocks-container ul {
+    font-size: 18px;
+  }
+
+  .blocks-container > div {
+    width: 100%;
+    display: none;
+  }
+
+  .blocks-container div.active {
+    display: block;
+    width: 100%;
+    animation: fade-in 0.5s ease-in-out; 
+  }
+
+ 
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
