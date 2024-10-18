@@ -9,7 +9,7 @@ import ProductTour from "./ProductTour";
 const HeroSection: React.FC = () => {
   return (
     <main className="mt-10">
-      <h1 className="self-start text-9xl tracking-tighter uppercase leading-[120px] max-w-[1476px] text-neutral-900 w-[78%] max-md:max-w-full max-md:text-4xl max-md:leading-10 max-sm:mt-24">
+      <h1 className="self-start text-9xl tracking-tighter uppercase leading-[120px] max-w-[1476px] text-neutral-900 w-[78%] max-md:max-w-full max-md:text-4xl max-md:leading-10 max-sm:mt-24 max-lg:text-8xl">
         IT-consultants, ship production-ready appsx10 faster&nbsp;
       </h1>
       <div className="flex flex-wrap gap-3 items-center self-start mt-5 text-2xl leading-none text-neutral-900">
