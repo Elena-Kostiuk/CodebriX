@@ -8,6 +8,7 @@
 .track-left {
   background-color: black;
   height: 1px;
+  margin-right: 16px;
 }
 
 .track-right {
@@ -20,6 +21,7 @@
   background: black;
   position: absolute;
   top: -5px;
+  /* margin-left: 5px; */
 }
 
 .custom-mark:last-child {
@@ -34,6 +36,7 @@
   cursor: pointer;
   position: relative;
   top: -14px;
+  margin-left: -16px;
 }
 
 .blocks-container {

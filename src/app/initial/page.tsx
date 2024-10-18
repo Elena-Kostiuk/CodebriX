@@ -1,8 +1,13 @@
 import React from "react";
-import MainComponent from "@/components/MainInitialComponent";
-
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
 const InitialPage: React.FC = () => {
-  return <MainComponent />;
+  return (
+    <div className="flex flex-col px-5  border-red-600">
+      <Header />
+      <HeroSection />
+    </div>
+  );
 };
 
 export default InitialPage;

@@ -12,15 +12,15 @@ const navigationItems = [
 
 const Navigation: React.FC = () => {
   return (
-    <nav className="box-border flex fixed right-5 flex-row grow shrink justify-between w-3/5 bg-white bg-opacity-0 h-[50px] max-sm:left-1 max-sm:flex-col max-sm:mt-18 max-sm:ml-2.5 max-sm:h-auto max-sm:w-[352px] max-sm:top-[80px]">
-      <ul className="flex flex-wrap gap-2 items-center self-stretch p-1 my-auto text-base font-medium tracking-wide whitespace-nowrap rounded-3xl backdrop-blur-[10px] bg-white bg-opacity-20 min-w-[240px] text-neutral-900 max-md:max-w-full max-sm:w-full">
+    <nav className="box-border fixed right-1/2 transform translate-x-1/2 bg-white bg-opacity-0 h-[50px] max-sm:mt-18 max-sm:ml-2.5 max-sm:h-auto max-sm:w-full max-sm:top-[80px]">
+      <ul className="flex gap-2 items-center p-1 my-auto text-base font-medium tracking-wide whitespace-nowrap rounded-3xl backdrop-blur-[10px] bg-white bg-opacity-20 min-w-[240px] text-neutral-900 max-md:max-w-full max-sm:w-full max-sm:flex-wrap max-sm:gap-1 max-sm:ml-2.5">
         {navigationItems.map((item, index) => (
           <li
             key={index}
-            className="gap-2 self-stretch px-6 py-2 my-auto text-center rounded-3xl cursor-pointer min-h-[40px] max-md:px-5"
+            className="gap-2 self-stretch px-6 py-2 my-auto text-center rounded-3xl cursor-pointer min-h-[40px] max-md:px-5 flex-shrink-0"
           >
             {item.hasDropdown ? (
-              <div className="flex gap-2 justify-center items-start self-stretch my-auto">
+              <div className="flex gap-2 justify-center items-center self-stretch my-auto">
                 <span>{item.label}</span>
                 <img
                   loading="lazy"

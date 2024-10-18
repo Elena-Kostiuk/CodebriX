@@ -98,7 +98,7 @@ const CustomSlider = () => {
             style={{
               width: "100%",
               visibility: getCurrentBlock() === index ? "visible" : "hidden",
-              transition: "visibility 0s linear 0.5s", 
+              transition: "visibility 0s linear 0.5s",
               textAlign: "center",
             }}
           >
