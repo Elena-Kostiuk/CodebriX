@@ -5,6 +5,7 @@ import React from "react";
 import TagList from "./TagList";
 import EmailSignup from "./EmailSignup";
 import ProductTour from "./ProductTour";
+import Description from "./Description";
 
 const HeroSection: React.FC = () => {
   return (
@@ -34,18 +35,7 @@ const HeroSection: React.FC = () => {
       <TagList />
       <EmailSignup />
       <div className="ml-auto max-w-[930px] w-full">
-        <div className="flex flex-wrap gap-3 items-center self-end mt-10 text-2xl leading-none text-neutral-900 max-md:mr-2.5 w-full max-w-full">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b210cd9ef03d02828cb17f37dd7fa79a537d7626353fca79dee8546a07f4833f?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c"
-            alt=""
-            className="object-contain shrink-0 aspect-[0.61] w-[11px]"
-          />
-          <p className="relative max-md:max-w-full after:content-[''] after:inline-block after:bg-neutral-900 after:w-3 after:h-[18px] after:shrink-0 after:ml-3">
-            Built by Clojure-developers for result-oriented developers
-          </p>
-        </div>
-
+        <Description paragraphText="Built by Clojure-developers for result-oriented developers"/>
         <ProductTour />
       </div>
     </main>

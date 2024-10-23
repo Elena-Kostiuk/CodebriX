@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Git & Versioning",
+      "text": "Keep development separate from production. Roll-back at any time. Migrate development changes to production environment"
+    },
+    {
+      "title": "Ubiquitous Hot Reload",
+      "text": "Built by Clojure devs who are used to the fast feedback from change to result. Hot Reload Everywhere"
+    },
+    {
+        "title": "Live preview of the local code",
+        "text": "Develop in the IDE of your choice and instantly see changes in the cloud"
+      },
+      {
+        "title": "Connect your IDE",
+        "text": "Do demanding coding in your IDE and connect it to the system"
+      },
+      {
+        "title": "Language Server",
+        "text": "Context-aware autocomplete. The system intakes the context from the current environment, Slack and Notion Aware of database, components, everything"
+      },
+      {
+        "title": "Docs in your IDE",
+        "text": "In-context guidance and faster problem solving"
+      }
+  ]
