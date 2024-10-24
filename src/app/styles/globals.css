@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   font-family: var(--font-ibm-plex-mono), sans-serif;
+  font-size: 24px;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-robert-trial-medium), sans-serif;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 40px;
 }
 button {
   cursor: pointer;
@@ -16,5 +27,11 @@ button {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 40px;
   }
 }

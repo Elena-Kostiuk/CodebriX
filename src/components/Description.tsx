@@ -6,7 +6,7 @@ type InfoCardProps = {
 
 const Description: React.FC<InfoCardProps> = ({ paragraphText }) => {
   return (
-    <div className=" relative flex flex-wrap gap-3 items-center self-start mt-5 text-2xl leading-none text-neutral-900 max-md:mr-2.5 w-full max-w-full">
+    <div className=" relative flex flex-wrap gap-3 items-center self-start w-full mt-5 text-2xl leading-none text-neutral-900 max-md:mr-2.5 max-md:w-full">
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/b210cd9ef03d02828cb17f37dd7fa79a537d7626353fca79dee8546a07f4833f?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c"

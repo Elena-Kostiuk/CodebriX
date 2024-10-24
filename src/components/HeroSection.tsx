@@ -4,7 +4,7 @@
 import React from "react";
 import TagList from "./TagList";
 import EmailSignup from "./EmailSignup";
-import ProductTour from "./ProductTour";
+import Screen from "./Screen";
 import Description from "./Description";
 
 const HeroSection: React.FC = () => {
@@ -34,9 +34,16 @@ const HeroSection: React.FC = () => {
 
       <TagList />
       <EmailSignup />
-      <div className="ml-auto max-w-[930px] w-full">
-        <Description paragraphText="Built by Clojure-developers for result-oriented developers"/>
-        <ProductTour />
+      <div className="ml-auto pl-[50%] w-full max-md:pl-0">
+        <Description paragraphText="Built by Clojure-developers for result-oriented developers" />
+        <Screen title="Product tour" width="w-full">
+          <img
+            loading="lazy"
+            src="/image/productTour.png"
+            alt="Product tour"
+            className="object-contain w-full h-auto border border-solid border-neutral-900 max-md:w-full max-md:h-auto"
+          />
+        </Screen>
       </div>
     </main>
   );

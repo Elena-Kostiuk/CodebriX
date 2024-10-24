@@ -1,21 +1,24 @@
 import React from "react";
 import Card from "./Card";
-import data from "../../data.json";
 
 interface CardProps {
   title: string;
   text: string;
 }
 
-const Dashboard: React.FC = () => {
+interface DashboardProps {
+  data: CardProps[];
+}
+
+const Dashboard: React.FC<DashboardProps> = ({ data }) => {
   return (
-    <div className="flex flex-wrap w-full justify-between border-b-2 border-black pb-10 relative overflow-hidden">
+    <div className="flex flex-wrap w-full justify-start gap-x-3 border-b-2 border-black pb-10 relative overflow-hidden">
       {data.map((card: CardProps, index: number) => (
         <div
           key={index}
           className="flex flex-col items-center w-full mt-24 sm:w-[calc(50%-10px)] lg:w-[calc(33.33%-10px)] relative max-md:mt-12"
         >
-          <h4 className="mx-auto max-md:text-[12px]">[.{index + 1}.]</h4>
+          <h4 className="mx-auto text-[16px] max-md:text-[12px]">[.{index + 1}.]</h4>
           <Card
             number={index + 1}
             title={card.title}

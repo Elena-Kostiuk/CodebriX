@@ -3,9 +3,20 @@
  */
 import React from "react";
 
-const ProductTour = () => {
+interface ScreenProps {
+  title: string;
+  children: React.ReactNode;
+  width?: string;
+}
+const Screen: React.FC<ScreenProps> = ({
+  title,
+  children,
+  width = "w-[48%]",
+}) => {
   return (
-    <section className="flex overflow-hidden flex-col self-end px-3 py-2.5 border border-solid mt-5 border-neutral-900 max-md:px-2 max-md:py-1 max-w-full">
+    <section
+      className={`flex overflow-hidden flex-col self-end ${width} px-3 py-2.5 border border-solid mt-5 border-neutral-900 max-md:px-2 max-md:py-1 max-md:w-full`}
+    >
       <div className="flex flex-wrap gap-4 justify-between items-center w-full mb-2 text-sm leading-none text-neutral-900 max-md:gap-2 max-md:mb-1 max-md:text-xs max-md:max-w-full">
         <img
           loading="lazy"
@@ -20,9 +31,9 @@ const ProductTour = () => {
         />
 
         <h3 className="flex gap-3 items-center self-stretch my-auto max-md:gap-1">
-          <span className="self-stretch my-auto">[..]</span>
-          <span className="self-stretch my-auto max-md:text-xs">
-            &gt; "Product tour"
+          <span className="text-[16px] self-stretch my-auto">[..]</span>
+          <span className="text-[16px] self-stretch my-auto max-md:text-xs">
+            &gt; "{title}"
           </span>
         </h3>
 
@@ -38,15 +49,9 @@ const ProductTour = () => {
           }}
         />
       </div>
-
-      <img
-        loading="lazy"
-        src="/image/productTour.png"
-        alt="Product tour"
-        className="object-contain w-full h-auto border border-solid border-neutral-900 max-md:w-full max-md:h-auto"
-      />
+      {children}
     </section>
   );
 };
 
-export default ProductTour;
+export default Screen;

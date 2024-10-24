@@ -13,8 +13,11 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        'ibm-plex-mono': ['var(--font-ibm-plex-mono)'],
-        'robert-trial': ['var(--font-robert-trial-medium)'],
+        "ibm-plex-mono": ["var(--font-ibm-plex-mono)"],
+        "robert-trial": ["var(--font-robert-trial-medium)"],
+      },
+      letterSpacing: {
+        tightest: "-0.02em",
       },
     },
   },

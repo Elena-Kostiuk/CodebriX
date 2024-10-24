@@ -1,0 +1,28 @@
+.list-decimal {
+  list-style-type: none;
+}
+
+.list-decimal li {
+  counter-increment: item;
+}
+
+.list-decimal li::before {
+  content: counter(item) " ";
+  color: #838486;
+}
+
+.list-decimal li span {
+  transition: color 0.3s ease;
+}
+
+.list-container:hover .blue {
+  color: #067ff2;
+}
+
+.list-container:hover .yellow {
+  color: #ffbc5b;
+}
+
+.list-container:hover .green {
+  color: #27bf7e;
+}

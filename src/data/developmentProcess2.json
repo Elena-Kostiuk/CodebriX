@@ -1,0 +1,22 @@
+[
+    {
+      "title": "Custom JS components",
+      "text": "Git-managed custom components. Use any NPM library in sandboxed environment"
+    },
+    {
+      "title": "Functions as a Service",
+      "text": "Git-push and call a function. Git-managed arbitrary backend logic"
+    },
+    {
+        "title": "Multiple Environments",
+        "text": "Keep production safe from changes in the development branch. Automatically migrate DB schema and code changes from branch to branch"
+      },
+      {
+        "title": "Style customization",
+        "text": "Apply global CSS to the whole app or create branded component library"
+      },
+      {
+        "title": "No Vendor Lock",
+        "text": "  Download the source code of your project  if you need to self-host "
+      }
+  ]
