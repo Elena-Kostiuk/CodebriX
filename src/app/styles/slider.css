@@ -46,7 +46,7 @@
   margin-top: 50px;
 }
 
-.blocks-container h3 {
+.blocks-container h4 {
   padding-top: 50px;
   margin-bottom: 12px;
   font-size: 14px;
@@ -61,7 +61,7 @@
 }
 
 
-@media (max-width: 1030px) {
+@media (max-width: 1024px) {
   .custom-thumb {
     width: 20px;
     height: 20px;

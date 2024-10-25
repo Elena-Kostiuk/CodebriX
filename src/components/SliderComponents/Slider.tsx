@@ -103,7 +103,7 @@ const CustomSlider = () => {
             }}
           >
             <div>
-              <h3>{block.title}</h3>
+              <h4>{block.title}</h4>
               <ul>
                 {block.items.map((item, idx) => (
                   <li key={idx}>{item}</li>

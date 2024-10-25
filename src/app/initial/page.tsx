@@ -7,7 +7,11 @@ import developmentProcess1 from "../../data/developmentProcess1.json";
 import developmentProcess2 from "../../data/developmentProcess2.json";
 import clientRelations from "../../data/clientRelations.json";
 import Screen from "@/components/Screen";
+import SliderHeader from "@/components/SliderComponents/SliderHeader";
+import Slider from "@/components/SliderComponents/Slider";
+import  Integrations  from "@/components/integrations/Integrations";
 import "../styles/screen.css";
+
 
 const InitialPage: React.FC = () => {
   return (
@@ -26,9 +30,9 @@ const InitialPage: React.FC = () => {
       </section>
       <section className="mt-[55px]">
         <h2>Local first platform to make everything work fast</h2>
-        <div className="flex justify-between max-md:flex-col">
-          <IDESelector />
-          <div className="w-[1px] ml-[20px] mr-[20px] border-r-2 border-dashed border-gray-300 max-md:hidden"></div>
+        <div className="flex justify-between flex-wrap flex-row-reverse max-lg:flex-col">
+         
+          
           <Screen title="Outer IDE">
             <div className="list-container object-contain bg-black  w-full  pt-[20px] pl-[20px] aspect-[1.94] max-md:h-auto">
               <ol className="list-decimal text-white">
@@ -54,7 +58,13 @@ const InitialPage: React.FC = () => {
               </ol>
             </div>
           </Screen>
+          <div className=" w-[1px] ml-[20px] mr-[20px] border-r-2 border-dashed border-gray-300 max-md:hidden"></div>
+          <IDESelector />
         </div>
+      </section>
+      <section className="relative  max-md:mt-20 mt-40 max-md:m-[30px]">
+        <SliderHeader />
+        <Slider  /> 
       </section>
       <section className="relative mt-40 max-md:mt-20">
         <h2 className="flex flex-start flex-wrap text-[80px] font-medium tracking-tighter leading-none  max-md:max-w-full max-md:text-[40px] tracking-tightest">
@@ -74,6 +84,10 @@ const InitialPage: React.FC = () => {
           #Development process
         </p>
         <Dashboard data={developmentProcess2} />
+      </section>
+      <section className="relative mt-40 max-md:mt-20">
+      <h2>Connectors & Integrations</h2>
+      <Integrations/>
       </section>
       <section className="relative mt-40 max-md:mt-20">
         <h2 className="text-[80px] font-medium tracking-tighter leading-none indent-60 max-md:indent-0 max-md:max-w-full max-md:text-[40px] tracking-tightest">
