@@ -11,10 +11,10 @@ interface TextBlockProps {
 const TextBlock: React.FC<TextBlockProps> = ({ subtitle, title }) => {
   return (
     <div className="flex flex-col max-md:max-w-full">
-      <h2 className="self-start text-2xl leading-none">{subtitle}</h2>
-      <h1 className="text-7xl font-medium tracking-tighter leading-none max-md:max-w-full max-md:text-4xl">
+      <p className="self-start">{subtitle}</p>
+      <h2 className=" font-medium tracking-tighter  max-md:max-w-full ">
         {title}
-      </h1>
+      </h2>
     </div>
   );
 };

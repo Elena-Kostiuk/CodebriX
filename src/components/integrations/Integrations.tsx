@@ -4,7 +4,7 @@ import integrationData from "../../data/integrationData.json";
 
 const Integrations: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3   gap-5 mt-[26px] text-neutral-900">
+    <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mt-[26px]">
       {integrationData.map((integration, index) => (
         <IntegrationCard
           key={index}
@@ -16,6 +16,6 @@ const Integrations: React.FC = () => {
       ))}
     </div>
   );
-}
+};
 
 export default Integrations;

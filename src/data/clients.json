@@ -1,0 +1,11 @@
+[
+    { "name": "Total", "icon": "/images/icons/totalEnergies.png", "iconAlt": "Total logo" },
+    { "name": "Eurovision", "icon": "/images/icons/g10.png", "iconAlt": "Eurovision logo" },
+    { "name": "OSRAM", "icon": "/images/icons/osram.png", "iconAlt": "OSRAM logo" },
+    { "name": "Shell", "icon": "/images/icons/shell.png", "iconAlt": "Shell logo" },
+    { "name": "Meta", "icon": "/images/icons/meta.png", "iconAlt": "Meta logo" },
+    { "name": "Google Cloud Platform", "icon": "/images/icons/google_Cloud.png", "iconAlt": "Google Cloud Platform logo" },
+    { "name": "Handelsblatt", "icon": "/images/icons/handelsblatt.png", "iconAlt": "Handelsblatt logo" },
+    { "name": "Precision for Medicine", "icon": "/images/icons/precision_for_Medicine.png", "iconAlt": "Precision for Medicine logo" }
+  ]
+  

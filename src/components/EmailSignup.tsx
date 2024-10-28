@@ -5,7 +5,7 @@ import React from "react";
 
 const EmailSignup: React.FC = () => {
   return (
-    <form className="flex flex-wrap gap-5 items-center self-center mt-10 max-w-full text-2xl font-medium leading-none w-[930px] mx-auto">
+    <form className="relative z-[3] flex flex-wrap gap-5 items-center self-center my-10 max-w-full text-2xl font-medium max-md:text-lg w-[930px] mx-auto">
       <div className="flex  grow shrink gap-10 justify-between items-center self-stretch px-6 py-5 my-auto tracking-wide uppercase rounded-xl border-b border-solid border-b-neutral-900 min-w-[240px] text-zinc-200 w-[457px] max-md:px-5 max-md:max-w-full">
         <label htmlFor="email" className="sr-only">
           Enter your email
@@ -26,11 +26,11 @@ const EmailSignup: React.FC = () => {
       </div>
       <button
         type="submit"
-        className="gap-2.5 self-stretch px-6 py-5 my-auto tracking-wide text-white uppercase rounded-xl cursor-pointer bg-neutral-900 min-w-[240px] max-md:px-4 max-sm:text-xl"
+        className="gap-2.5 self-stretch px-6 py-5 my-auto tracking-wide text-white uppercase rounded-xl cursor-pointer bg-neutral-900 min-w-[240px] max-md:px-4 max-w-full"
       >
         Sign up for private Beta
       </button>
-      <p className="self-stretch my-auto text-sm leading-none text-neutral-900">
+      <p className="self-stretch my-auto text-[14px] leading-[20px] max-md:text-[12px] max-md:leading-[18px]">
         [...] No credit card required
       </p>
     </form>

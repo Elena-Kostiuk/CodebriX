@@ -5,7 +5,7 @@ import React from "react";
 
 const SignInButton: React.FC = () => {
   return (
-    <button className="gap-2.5 self-stretch px-6 my-auto text-base font-medium tracking-wide text-white uppercase rounded-lg bg-neutral-900 min-h-[49px] max-md:px-5 max-sm:ml-2 max-sm:w-[32%] fixed right-5">
+    <button className="fixed right-5 z-[6] gap-2.5 self-stretch px-6 my-auto text-base font-medium tracking-wide text-white uppercase rounded-lg bg-neutral-900 min-h-[49px] max-md:px-5 max-sm:ml-2 max-sm:w-[32%] ">
       Sign in
     </button>
   );

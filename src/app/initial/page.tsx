@@ -2,39 +2,42 @@ import React from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Dashboard from "@/components/InfoCardComponents/Dashboard";
-import IDESelector from "@/components/ide/IDESelector";
+import BrandsSlider from "@/components/BrandsSlider";
 import developmentProcess1 from "../../data/developmentProcess1.json";
 import developmentProcess2 from "../../data/developmentProcess2.json";
 import clientRelations from "../../data/clientRelations.json";
 import Screen from "@/components/Screen";
 import SliderHeader from "@/components/SliderComponents/SliderHeader";
 import Slider from "@/components/SliderComponents/Slider";
-import  Integrations  from "@/components/integrations/Integrations";
+import Integrations from "@/components/integrations/Integrations";
 import "../styles/screen.css";
-
+import ides from "../../data/ides.json";
+import clients from "../../data/clients.json";
+import { MetricsSection } from "@/components/metrics/MetricsSection";
+import LogoSVG from "@/components/LogoSVG";
 
 const InitialPage: React.FC = () => {
   return (
-    <div className="flex flex-col px-5  border-red-600">
+    <main className="flex flex-col px-5  border-red-600">
       <Header />
       <HeroSection />
+
       <section className="relative mt-40 max-md:mt-20">
-        <h2 className="flex flex-start flex-wrap tracking-tighter leading-none indent-60 mr-[240px] max-md:indent-0 max-md:max-w-full max-md:text-[40px] tracking-tightest">
+        <h2 className="flex flex-start flex-wrap tracking-tighter indent-60 mr-[240px] max-md:indent-0 max-md:max-w-fulltracking-tightest max-md:mr-0">
           {" "}
           DevEx: Local first platform to make everything work fast
         </h2>
-        <p className="absolute top-[40px] left-[8px] text-[14px] leading-[20px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
+        <p className="absolute top-[40px] left-[8px] text-[14px] leading-[20px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-md:relative max-md:text-[12px] max-md:leading-[18px] max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
           #Development process
         </p>
         <Dashboard data={developmentProcess1} />
       </section>
+
       <section className="mt-[55px]">
         <h2>Local first platform to make everything work fast</h2>
-        <div className="flex justify-between flex-wrap flex-row-reverse max-lg:flex-col">
-         
-          
+        <div className="flex justify-start  flex-wrap flex-row-reverse max-lg:flex-col">
           <Screen title="Outer IDE">
-            <div className="list-container object-contain bg-black  w-full  pt-[20px] pl-[20px] aspect-[1.94] max-md:h-auto">
+            <div className="list-container object-contain bg-black  w-full  pt-[20px] pl-[20px] aspect-[1.94] text-[24px] leading-[32px] max-md:text-[18px] max-md:leading-[24px]  max-md:h-auto">
               <ol className="list-decimal text-white">
                 <li>
                   &#123;&#123;currentRow<span className="yellow">.</span>
@@ -58,14 +61,16 @@ const InitialPage: React.FC = () => {
               </ol>
             </div>
           </Screen>
-          <div className=" w-[1px] ml-[20px] mr-[20px] border-r-2 border-dashed border-gray-300 max-md:hidden"></div>
-          <IDESelector />
+          <div className=" w-[1px] mt-[20px] mx-[20px] border-l-2 border-dotted border-gray-300 max-md:hidden"></div>
+          <BrandsSlider data={ides} />
         </div>
       </section>
+
       <section className="relative  max-md:mt-20 mt-40 max-md:m-[30px]">
         <SliderHeader />
-        <Slider  /> 
+        <Slider />
       </section>
+
       <section className="relative mt-40 max-md:mt-20">
         <h2 className="flex flex-start flex-wrap text-[80px] font-medium tracking-tighter leading-none  max-md:max-w-full max-md:text-[40px] tracking-tightest">
           {" "}
@@ -85,20 +90,40 @@ const InitialPage: React.FC = () => {
         </p>
         <Dashboard data={developmentProcess2} />
       </section>
+
       <section className="relative mt-40 max-md:mt-20">
-      <h2>Connectors & Integrations</h2>
-      <Integrations/>
+        <h2>Connectors & Integrations</h2>
+        <Integrations />
       </section>
+
       <section className="relative mt-40 max-md:mt-20">
-        <h2 className="text-[80px] font-medium tracking-tighter leading-none indent-60 max-md:indent-0 max-md:max-w-full max-md:text-[40px] tracking-tightest">
+        <h2 className="font-medium tracking-tighter leading-none indent-60 max-md:indent-0 max-md:max-w-full  tracking-tightest">
           Let us help you close the deal fast
         </h2>
-        <p className="absolute top-[40px] left-[8px] text-[14px] leading-[20px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
+        <p className="absolute top-[40px] left-[8px] text-[14px] leading-[20px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-md:text-[12px] max-md:leading-[18px] max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
           #Development process
         </p>
         <Dashboard data={clientRelations} />
       </section>
-    </div>
+
+      <MetricsSection />
+
+      <section className="relative mt-40 max-md:mt-20">
+        <h2>Built by the team that shipped for</h2>
+        <div className="flex justify-start  flex-wrap  max-lg:flex-col">
+          <Screen title="Preview the new table in your dashboard">
+            <img
+              loading="lazy"
+              src="/images/previewTable.png"
+              alt="Preview the new table in your dashboard"
+              className="object-contain w-full h-auto border border-solid border-neutral-900 max-md:w-full max-md:h-auto"
+            />
+          </Screen>
+          <div className=" w-[1px] mt-[20px] mx-[20px] border-l-2 border-dotted border-gray-300 max-md:hidden"></div>
+          <BrandsSlider data={clients} />
+        </div>
+      </section>
+    </main>
   );
 };
 

@@ -11,11 +11,11 @@ const SliderHeader: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-wrap gap-5 justify-between self-stretch w-full text-neutral-900 max-md:max-w-full">
+    <div className="flex flex-wrap gap-5 justify-between self-stretch w-full  max-md:max-w-full">
       {items.map((item, index) => (
         <TextBlock key={index} subtitle={item.subtitle} title={item.title} />
       ))}
-    </section>
+    </div>
   );
 };
 

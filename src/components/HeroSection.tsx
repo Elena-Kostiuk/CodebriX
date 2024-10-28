@@ -9,11 +9,28 @@ import Description from "./Description";
 
 const HeroSection: React.FC = () => {
   return (
-    <main className="mt-10">
-      <h1 className="self-start text-9xl tracking-tighter uppercase leading-[120px] max-w-[1476px] text-neutral-900 w-[78%] max-md:max-w-full max-md:text-4xl max-md:leading-10 max-sm:mt-24 max-lg:text-8xl">
-        IT-consultants, ship production-ready appsx10 faster&nbsp;
+    <section className="mt-10 ">
+      <div className="absolute opacity-0 hover:opacity-100 transition-opacity duration-300 top-0 left-0 w-[98vw] h-[150vh] z-2">
+        <img
+          loading="lazy"
+          src="/images/blur-effect.png"
+          alt=""
+          className="absolute top-0 left-[35%] w-[50vw] object-cover"
+        />
+      </div>
+      <h1 className="group text-[140px] tracking-tighter uppercase leading-[120px] text-neutral-900 max-xl:text-[100px] max-xl:leading-[85px] max-md:text-[60px] max-md:leading-[50px]">
+        <span className="relative z-[4] inline-block  pr-5 group-hover:bg-[#AFEDFF] bg-clip-content transition-colors duration-300">
+          IT-consultants, ship&nbsp;{" "}
+        </span>
+        <span className=" relative z-[3] inline-block pr-5 group-hover:bg-[#AFEDFF] transition-colors duration-300">
+          production-ready{" "}
+        </span>
+        <span className="relative z-[3] inline-block pr-5 group-hover:bg-[#AFEDFF] transition-colors duration-300">
+          apps x10 faster&nbsp;
+        </span>
       </h1>
-      <div className="flex flex-wrap gap-3 items-center self-start mt-5 text-2xl leading-none text-neutral-900">
+      {/* </h1> */}
+      <div className="flex flex-wrap gap-3 items-center self-start mt-5  leading-none">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/0d95f6465573d9ea8cbf5f565440eb2548c8db0b5d731eacdc20601820543cd5?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c"
@@ -39,13 +56,13 @@ const HeroSection: React.FC = () => {
         <Screen title="Product tour" width="w-full">
           <img
             loading="lazy"
-            src="/image/productTour.png"
+            src="/images/productTour.png"
             alt="Product tour"
             className="object-contain w-full h-auto border border-solid border-neutral-900 max-md:w-full max-md:h-auto"
           />
         </Screen>
       </div>
-    </main>
+    </section>
   );
 };
 

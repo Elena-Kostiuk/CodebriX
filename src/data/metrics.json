@@ -1,0 +1,27 @@
+[
+    {
+      "id": "response-time",
+      "number": "50",
+      "unit": "ms",
+      "description": "Response time",
+      "subtitle": "Local-first platform"
+    },
+    {
+      "id": "development-time",
+      "number": "x10",
+      "description": "Faster development time"
+    },
+    {
+      "id": "first-app",
+      "number": "20",
+      "unit": "mins",
+      "description": "Zero to first app"
+    },
+    {
+      "id": "offline-mode",
+      "number": "10",
+      "prefix": "Up to",
+      "unit": "days",
+      "description": "In offline mode"
+    }
+  ]
