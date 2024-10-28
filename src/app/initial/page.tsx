@@ -14,7 +14,7 @@ import "../styles/screen.css";
 import ides from "../../data/ides.json";
 import clients from "../../data/clients.json";
 import { MetricsSection } from "@/components/metrics/MetricsSection";
-import LogoSVG from "@/components/LogoSVG";
+
 
 const InitialPage: React.FC = () => {
   return (
@@ -37,7 +37,7 @@ const InitialPage: React.FC = () => {
         <h2>Local first platform to make everything work fast</h2>
         <div className="flex justify-start  flex-wrap flex-row-reverse max-lg:flex-col">
           <Screen title="Outer IDE">
-            <div className="list-container object-contain bg-black  w-full  pt-[20px] pl-[20px] aspect-[1.94] text-[24px] leading-[32px] max-md:text-[18px] max-md:leading-[24px]  max-md:h-auto">
+            <div className="list-container object-contain bg-black  w-full  p-[20px] aspect-[1.94] text-[24px] leading-[32px] max-md:text-[16px] max-md:leading-[24px]  max-md:h-auto max-md:p-[16px]">
               <ol className="list-decimal text-white">
                 <li>
                   &#123;&#123;currentRow<span className="yellow">.</span>
@@ -50,7 +50,7 @@ const InitialPage: React.FC = () => {
                   (Math.abs(<span className="yellow">10000 -</span>{" "}
                 </li>
                 <li>
-                  parseInt(currentRow.<span className="blue">utilization</span>
+                  parseInt (currentRow.<span className="blue">utilization</span>
                   )) <span className="yellow">&lt;</span>
                 </li>
                 <li>
