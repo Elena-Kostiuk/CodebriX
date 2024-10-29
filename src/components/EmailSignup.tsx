@@ -5,7 +5,7 @@ import React from "react";
 
 const EmailSignup: React.FC = () => {
   return (
-    <form className="relative z-[3] flex flex-wrap gap-5 items-center self-center my-10 max-w-full text-2xl font-medium max-md:text-lg w-[930px] mx-auto">
+    <form className="flex flex-wrap gap-5 items-center self-center my-10 max-w-full text-2xl font-medium max-md:text-lg w-[930px] mx-auto">
       <div className="flex  grow shrink gap-10 justify-between items-center self-stretch px-6 py-5 my-auto tracking-wide uppercase rounded-xl border-b border-solid border-b-neutral-900 min-w-[240px] text-zinc-200 w-[457px] max-md:px-5 max-md:max-w-full">
         <label htmlFor="email" className="sr-only">
           Enter your email

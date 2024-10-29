@@ -5,12 +5,13 @@ import * as React from "react";
 import { MetricCard, MetricCardProps } from "./MetricCard";
 import { Divider } from "./Divider";
 import metrics from "../../data/metrics.json";
+import exp from "constants";
 
-export function MetricsSection() {
+const MetricsSection=() =>{
   return (
     <div
       aria-label="Key Metrics"
-      className="flex flex-wrap gap-10 mt-40 max-md:mt-20"
+      className="flex flex-wrap justify-between gap-10 mt-40 mr-20 max-md:mt-20 max-md:mr-0"
     >
       {metrics.map((metric, index) => (
         <React.Fragment key={metric.id}>
@@ -21,3 +22,5 @@ export function MetricsSection() {
     </div>
   );
 }
+
+export default MetricsSection

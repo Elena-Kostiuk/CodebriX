@@ -13,7 +13,7 @@ const tags = [
 
 const TagList: React.FC = () => {
   return (
-    <ul className="relative  z-[3] flex flex-wrap gap-3 items-start mt-5 max-w-full text-[14px] leading-[20px] max-md:text-[12px] max-md:leading-[18px] w-[595px]">
+    <ul className="flex flex-wrap gap-3 items-start mt-5 max-w-full text-[14px] leading-[20px] max-md:text-[12px] max-md:leading-[18px] w-[595px]">
       {tags.map((tag, index) => (
         <li
           key={index}

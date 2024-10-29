@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Dashboard from "@/components/InfoCardComponents/Dashboard";
 import BrandsSlider from "@/components/BrandsSlider";
@@ -13,13 +12,13 @@ import Integrations from "@/components/integrations/Integrations";
 import "../styles/screen.css";
 import ides from "../../data/ides.json";
 import clients from "../../data/clients.json";
-import { MetricsSection } from "@/components/metrics/MetricsSection";
-
+import MetricsSection from "@/components/metrics/MetricsSection";
+import CustomerApps from "@/components/CustomerApps/CustomerApps";
+import Footer from "@/components/Footer";
 
 const InitialPage: React.FC = () => {
   return (
     <main className="flex flex-col px-5  border-red-600">
-      <Header />
       <HeroSection />
 
       <section className="relative mt-40 max-md:mt-20">
@@ -97,7 +96,7 @@ const InitialPage: React.FC = () => {
       </section>
 
       <section className="relative mt-40 max-md:mt-20">
-        <h2 className="font-medium tracking-tighter leading-none indent-60 max-md:indent-0 max-md:max-w-full  tracking-tightest">
+        <h2 className="font-medium tracking-tighter indent-60 max-md:indent-0 max-md:max-w-full  tracking-tightest">
           Let us help you close the deal fast
         </h2>
         <p className="absolute top-[40px] left-[8px] text-[14px] leading-[20px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-md:text-[12px] max-md:leading-[18px] max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
@@ -112,17 +111,33 @@ const InitialPage: React.FC = () => {
         <h2>Built by the team that shipped for</h2>
         <div className="flex justify-start  flex-wrap  max-lg:flex-col">
           <Screen title="Preview the new table in your dashboard">
-            <img
-              loading="lazy"
-              src="/images/previewTable.png"
-              alt="Preview the new table in your dashboard"
-              className="object-contain w-full h-auto border border-solid border-neutral-900 max-md:w-full max-md:h-auto"
-            />
+            <div
+              className="relative flex items-center justify-center bg-cover bg-center border-x border-solid border-neutral-900 w-full aspect-[2/1.1] max-lg:h-auto max-lg:h-auto"
+              style={{ backgroundImage: "url('/images/background.png')" }}
+            >
+              <img
+                loading="lazy"
+                src="/images/previewTable.png"
+                alt="Preview the new table in your dashboard"
+                className="object-contain w-[100%] max-w-[618px]  max-md:w-full max-md:h-auto"
+              />
+            </div>
           </Screen>
           <div className=" w-[1px] mt-[20px] mx-[20px] border-l-2 border-dotted border-gray-300 max-md:hidden"></div>
           <BrandsSlider data={clients} />
         </div>
       </section>
+
+      <section className="relative mt-40 max-md:mt-20 flex flex-col items-start">
+        <h2 className="font-medium tracking-tighter indent-60 max-md:indent-0  max-md:max-w-full  tracking-tightest">
+          Create Interactive Customer-facing Apps
+        </h2>
+        <p className="absolute top-[40px] left-[8px] text-[14px] leading-[20px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-md:text-[12px] max-md:leading-[18px] max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
+          #Use Cases
+        </p>
+        <CustomerApps />
+      </section>
+      <Footer />
     </main>
   );
 };

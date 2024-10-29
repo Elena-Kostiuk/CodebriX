@@ -15,7 +15,7 @@ const Screen: React.FC<ScreenProps> = ({
 }) => {
   return (
     <section
-      className={`relative z-[3] flex overflow-hidden flex-col self-end ${width} px-3 py-2.5 text-[14px] leading-[20px] max-md:text-[12px] max-md:leading-[18px] border border-solid mt-5 border-neutral-900 max-md:px-2 max-md:py-1 max-md:w-full`}
+      className={`flex overflow-hidden flex-col self-end ${width} px-3 py-2.5 text-[14px] leading-[20px] max-md:text-[12px] max-md:leading-[18px] border border-solid mt-5 border-neutral-900 max-md:px-2 max-md:py-1 max-md:w-full`}
     >
       <div className="flex flex-wrap gap-4 justify-between items-center w-full mb-2   max-md:gap-2 max-md:mb-1  max-md:max-w-full">
         <img
@@ -41,7 +41,7 @@ const Screen: React.FC<ScreenProps> = ({
         />
 
         <div
-          className="object-contain shrink-0 self-stretch w-7 aspect-square bg-no-repeat bg-center bg-cover cursor-pointer transition-transform hover:scale-105 active:scale-95 max-md:w-6 max-md:aspect-square"
+          className="object-contain shrink-0 self-stretch w-7 aspect-square bg-no-repeat bg-center bg-cover transition-transform hover:scale-105 active:scale-95 max-md:w-6 max-md:aspect-square"
           style={{
             backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets/TEMP/1cd4a4c76c84070bc418043908a6cbde45f5b74f730d9a288005c15e1b8a6d4f?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c')`,
           }}

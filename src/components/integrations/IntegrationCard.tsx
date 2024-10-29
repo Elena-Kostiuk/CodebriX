@@ -1,6 +1,6 @@
 import * as React from "react";
 import { IntegrationItem } from "./IntegrationItem";
-import "../../app/styles/integration.css";
+import "../../app/styles/colorHover.css";
 
 interface Item {
   icon?: string;

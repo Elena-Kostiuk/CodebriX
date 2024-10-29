@@ -8,11 +8,14 @@ interface CardProps {
 
 interface DashboardProps {
   data: CardProps[];
+  width?: string;
 }
 
-const Dashboard: React.FC<DashboardProps> = ({ data }) => {
+const Dashboard: React.FC<DashboardProps> = ({ data, width = "w-full" }) => {
   return (
-    <div className="flex flex-wrap w-full justify-start gap-x-3 border-b-2 border-black pb-10 relative overflow-hidden ">
+    <div
+      className={`flex flex-wrap ${width} justify-start gap-x-3 border-b-2 border-black pb-10 relative overflow-hidden `}
+    >
       {data.map((card: CardProps, index: number) => (
         <div
           key={index}
@@ -25,7 +28,7 @@ const Dashboard: React.FC<DashboardProps> = ({ data }) => {
             number={index + 1}
             title={card.title}
             descriptionText={card.text}
-            className="flex flex-col w-full min-h-[196px] rounded-lg max-w-[541px] max-md:h-auto"
+            className="flex flex-col w-full min-h-[196px]  rounded-lg max-w-[541px] max-md:h-auto"
           />
           {index < data.length - 1 && (
             <div className="absolute bottom-0 right-[-1px] w-[1px] h-[85%] border-r-2 border-dotted border-gray-300 max-md:hidden" />

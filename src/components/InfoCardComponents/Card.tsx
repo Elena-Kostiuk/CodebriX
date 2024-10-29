@@ -6,14 +6,10 @@ interface CardProps {
   title: string;
   descriptionText: string;
   className?: string;
+  animation?: string;
 }
 
-const Card: React.FC<CardProps> = ({
-  number,
-  title,
-  descriptionText,
-  className,
-}) => {
+const Card: React.FC<CardProps> = ({ title, descriptionText, className }) => {
   return (
     <div className={`${className}`}>
       <h3 className="font-medium">{title}</h3>
