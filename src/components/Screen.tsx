@@ -15,7 +15,7 @@ const Screen: React.FC<ScreenProps> = ({
 }) => {
   return (
     <section
-      className={`flex overflow-hidden flex-col self-end ${width} px-3 py-2.5 text-[14px] leading-[20px] max-md:text-[12px] max-md:leading-[18px] border border-solid mt-5 border-neutral-900 max-md:px-2 max-md:py-1 max-md:w-full`}
+      className={`flex overflow-hidden flex-col self-end ${width} px-3 py-2.5 text-[14px] leading-[20px] max-md:text-[12px] max-md:leading-[18px] bg-white border border-solid mt-5 border-neutral-900 max-md:px-2 max-md:py-1 max-md:w-full`}
     >
       <div className="flex flex-wrap gap-4 justify-between items-center w-full mb-2   max-md:gap-2 max-md:mb-1  max-md:max-w-full">
         <img

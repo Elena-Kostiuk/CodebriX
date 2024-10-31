@@ -13,8 +13,8 @@ const Description: React.FC<InfoCardProps> = ({ paragraphText }) => {
         alt=""
         className="object-contain shrink-0 aspect-[0.56] w-[11px] absolute left-1 top-1.5 max-md:w-[9px] max-md:top-2"
       />
-      <p className="relative max-md:max-w-full after:content-[''] after:inline-block after:bg-neutral-900 after:w-3 after:h-[18px] after:shrink-0 after:ml-3 indent-7">
-        {paragraphText}
+      <p className="relative max-md:max-w-full indent-7">
+        {paragraphText} &#9646;
       </p>
     </div>
   );

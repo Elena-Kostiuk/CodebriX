@@ -15,6 +15,7 @@ import clients from "../../data/clients.json";
 import MetricsSection from "@/components/metrics/MetricsSection";
 import CustomerApps from "@/components/CustomerApps/CustomerApps";
 import Footer from "@/components/Footer";
+import Features from "@/components/FeaturesComponetns/Features";
 
 const InitialPage: React.FC = () => {
   return (
@@ -105,6 +106,8 @@ const InitialPage: React.FC = () => {
         <Dashboard data={clientRelations} />
       </section>
 
+      <Features />
+
       <MetricsSection />
 
       <section className="relative mt-40 max-md:mt-20">
@@ -137,6 +140,7 @@ const InitialPage: React.FC = () => {
         </p>
         <CustomerApps />
       </section>
+      
       <Footer />
     </main>
   );

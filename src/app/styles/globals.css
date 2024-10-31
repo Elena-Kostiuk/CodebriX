@@ -7,6 +7,7 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #101114;
+  overflow-x: hidden
 }
 h1,
 h2,
@@ -22,6 +23,7 @@ h2 {
 
 h3 {
   font-size: 40px;
+  line-height: 48px;
 }
 button {
   cursor: pointer;
@@ -44,6 +46,7 @@ button {
   }
   h3 {
     font-size: 32px;
+    line-height: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -57,5 +60,6 @@ button {
   }
   h3 {
     font-size: 28px;
+    line-height: 32px;
   }
 }

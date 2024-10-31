@@ -1,28 +1,27 @@
 "use client";
 
-import React, { useState } from 'react';
-import Vector from '/public/images/Vector.svg';
+import React from "react";
+import Vector from "/public/images/Vector.svg";
+import "../app/styles/colorHover.css";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const LogoSVG: React.FC = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
 
   return (
-    <div 
-      className="svg-container mt-[10%] pt-[2%] w-[100%] border-t-2 border-dotted  border-gray-300"
-      onMouseEnter={() => setIsHovered(true)}   
-      onMouseLeave={() => setIsHovered(false)} 
-      style={{ color: isHovered ? '#BBD4FF' : 'white', transition: 'color 0.3s ease' }} 
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 20 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 1.5 }}
+      className="svg-container mt-[10%] py-[2%] w-[100%] border-t-2 border-dotted border-gray-300"
     >
-      <Vector 
-        className="svg-icon w-[100%]" 
-        style={{ fill: 'currentColor', transition: 'fill 0.3s ease' }} 
-      />
-      <style jsx>{`
-        .svg-container {
-          display: inline-block;
-        }
-      `}</style>
-    </div>
+      <Vector className="svg-icon w-[100%]" />
+    </motion.div>
   );
 };
 

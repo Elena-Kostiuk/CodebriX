@@ -40,8 +40,8 @@ const HeroSection: React.FC = () => {
             alt=""
             className="object-contain shrink-0 aspect-[1.61] w-[29px]"
           />
-          <span className="relative max-md:max-w-full after:content-[''] after:inline-block after:bg-neutral-900 after:w-3 after:h-[18px] after:shrink-0 after:ml-3">
-            full-code platform with the resource-based pricing model
+          <span className="relative max-md:max-w-full">
+            full-code platform with the resource-based pricing model &#9646;
           </span>
         </div>
 
