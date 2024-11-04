@@ -22,7 +22,7 @@ const BrandsSlider: React.FC<DATASelectorProps> = ({ data }) => {
   );
 
   return (
-    <div className="relative overflow-hidden max-w-[49%] self-start max-md:max-w-full">
+    <div className="relative  max-w-[49%] self-start overflow-hidden max-lg:max-w-full">
       <div
         className="absolute z-[2] left-0 top-0 w-[8%] h-[100%] bg-gradient-to-r from-white/95 to-white/20 cursor-pointer"
         onMouseEnter={() => setHoverDirection("left")}

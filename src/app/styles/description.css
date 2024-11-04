@@ -1,0 +1,18 @@
+.icon-paragraph::before {
+    content: "";
+    display: inline-block;
+    background-image: url("/images/chevron.png");
+    background-size: contain;
+    background-image: no-repeat;
+    width: 10px; 
+    height: 16px;
+    margin-right: 18px;
+  }
+  
+  @media (max-width: 768px) {
+    .icon-paragraph::before {
+      width: 6px; 
+      height: 12px;
+    
+    }
+  }

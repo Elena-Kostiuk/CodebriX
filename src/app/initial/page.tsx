@@ -6,8 +6,7 @@ import developmentProcess1 from "../../data/developmentProcess1.json";
 import developmentProcess2 from "../../data/developmentProcess2.json";
 import clientRelations from "../../data/clientRelations.json";
 import Screen from "@/components/Screen";
-import SliderHeader from "@/components/SliderComponents/SliderHeader";
-import Slider from "@/components/SliderComponents/Slider";
+import SliderWrapper from "@/components/SliderComponents/SliderWrapper";
 import Integrations from "@/components/integrations/Integrations";
 import "../styles/screen.css";
 import ides from "../../data/ides.json";
@@ -66,24 +65,20 @@ const InitialPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="relative  max-md:mt-20 mt-40 max-md:m-[30px]">
-        <SliderHeader />
-        <Slider />
-      </section>
+      <SliderWrapper />
 
       <section className="relative mt-40 max-md:mt-20">
-        <h2 className="flex flex-start flex-wrap text-[80px] font-medium tracking-tighter leading-none  max-md:max-w-full max-md:text-[40px] tracking-tightest">
-          {" "}
-          <span className="indent-60 max-md:indent-0">Low-code</span>
+        <h2 className=" text-[80px] font-medium tracking-tighter leading-none  max-md:max-w-full max-md:text-[40px] tracking-tightest indent-60 max-md:indent-0">
+          Low-code
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e2a2f97a06f3f0f8b248d41757b82fb2efc5d0517df3d89c882dca360ad292d2?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c"
-            alt=""
-            className="object-contain shrink-0 aspect-[1.61] w-[5rem] ml-10 mr-10  mb-[-15px]"
+            src="/images/arrowRight.svg"
+            className="inline w-[1em] h-[1em] mx-5"
           />
-          <span className="mr-7">Full-code with custom</span>
-          <br />
-          <span>components</span>
+          Full-code with custom components
+          <span className="font-ibm-plex-mono self-end ml-4 text-[24px] leading-[36px] max-lg:text-[20px] max-md:text-[18px]">
+            / Flexibility / No Limits
+          </span>
         </h2>
         <p className="absolute top-[40px] left-[8px] text-[14px] leading-[20px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
           #Development process
@@ -91,10 +86,7 @@ const InitialPage: React.FC = () => {
         <Dashboard data={developmentProcess2} />
       </section>
 
-      <section className="relative mt-40 max-md:mt-20">
-        <h2>Connectors & Integrations</h2>
-        <Integrations />
-      </section>
+      <Integrations />
 
       <section className="relative mt-40 max-md:mt-20">
         <h2 className="font-medium tracking-tighter indent-60 max-md:indent-0 max-md:max-w-full  tracking-tightest">
@@ -140,7 +132,7 @@ const InitialPage: React.FC = () => {
         </p>
         <CustomerApps />
       </section>
-      
+
       <Footer />
     </main>
   );

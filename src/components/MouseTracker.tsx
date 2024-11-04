@@ -1,23 +1,45 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import SlipAnimationElement from "./SlipAnimationElement";
 
 const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [showAnimated, setShowAnimated] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
+    // Only run in the browser
+    const handleResize = () => {
+      setIsDesktop(typeof window !== "undefined" && window.innerWidth >= 1024);
+    };
+
+    // Check initial state if in browser
+    if (typeof window !== "undefined") {
+      handleResize();
+      window.addEventListener("resize", handleResize);
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isDesktop) return;
+
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
-      setShowAnimated(false); 
-      resetTimeout(); 
+      setShowAnimated(false);
+      resetTimeout();
     };
 
     let timeout: NodeJS.Timeout;
 
     const startTimeout = () => {
       timeout = setTimeout(() => {
-        setShowAnimated(true); 
+        setShowAnimated(true);
       }, 5000);
     };
 
@@ -26,30 +48,33 @@ const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => 
       startTimeout();
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
-    startTimeout(); 
+    if (typeof window !== "undefined") {
+      window.addEventListener("mousemove", handleMouseMove);
+      startTimeout();
+    }
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      clearTimeout(timeout); 
+      if (typeof window !== "undefined") {
+        window.removeEventListener("mousemove", handleMouseMove);
+        clearTimeout(timeout);
+      }
     };
-  }, []);
+  }, [isDesktop]);
 
   return (
     <div className="relative">
-      {showAnimated && (
+      {isDesktop && showAnimated && (
         <div
-        style={{
+          style={{
             position: "absolute",
             top: mousePosition.y,
             left: mousePosition.x,
-            transform: "translate(-50%, -50%)", 
-            zIndex: -1, 
+            transform: "translate(-50%, -50%)",
+            zIndex: -1,
           }}
           className={`transition-opacity duration-1000 ${showAnimated ? 'opacity-100' : 'opacity-0'}`}
         >
-            
-          <SlipAnimationElement /> 
+          <SlipAnimationElement />
         </div>
       )}
       {children}

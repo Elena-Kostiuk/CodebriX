@@ -19,16 +19,16 @@ const Dashboard: React.FC<DashboardProps> = ({ data, width = "w-full" }) => {
       {data.map((card: CardProps, index: number) => (
         <div
           key={index}
-          className="flex flex-col items-center w-full mt-24 sm:w-[calc(50%-10px)] lg:w-[calc(33.33%-10px)] relative max-md:mt-12 "
+          className="flex flex-col items-center w-full mt-24 sm:w-[calc(50%-10px)] lg:w-[calc(33.33%-10px)] relative max-md:mt-10"
         >
-          <h4 className="mx-auto text-[14px] max-md:text-[12px]">
+          <h4 className="mx-auto text-[14px]  max-md:text-[12px]">
             [.{index + 1}.]
           </h4>
           <Card
             number={index + 1}
             title={card.title}
             descriptionText={card.text}
-            className="flex flex-col w-full min-h-[196px]  rounded-lg max-w-[541px] max-md:h-auto"
+            className="flex flex-col w-full min-h-[196px]  rounded-lg max-w-[541px] max-md:min-h-0"
           />
           {index < data.length - 1 && (
             <div className="absolute bottom-0 right-[-1px] w-[1px] h-[85%] border-r-2 border-dotted border-gray-300 max-md:hidden" />

@@ -22,7 +22,7 @@ export function IntegrationCard({
 }: IntegrationCardProps) {
   return (
     <article
-      className={`flex overflow-hidden flex-col p-5 pr-0 ${hoverColor} transition duration-500 ease-in-out rounded-3xl border border-solid border-neutral-900 h-[362px] max-lg:h-auto`}
+      className={`flex overflow-hidden flex-col p-5 pr-0 ${hoverColor} transition duration-500 ease-in-out rounded-3xl border border-solid border-neutral-900 h-[362px] max-lg:h-auto max-md:p-2`}
     >
       <div className="flex flex-col w-full">
         <p className="self-center text-[14px] max-md:text-[12px]">

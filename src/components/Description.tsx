@@ -1,20 +1,25 @@
 import React from "react";
+import "../app/styles/description.css";
 
 type InfoCardProps = {
   paragraphText: string;
-};
+  width?: string;
+  aligment?: string;
+}
 
-const Description: React.FC<InfoCardProps> = ({ paragraphText }) => {
+const Description: React.FC<InfoCardProps> = ({ paragraphText, aligment="self-start",width=" w-full"}) => {
+  
+  const replaceSymbolWithImage = (text: string) => {
+    return text.split("&").map((part, index) => (
+      index === 0 ? part : <><img src="/images/arrowRight.svg" alt="arrow" className="inline w-[1em] h-[1em]"/>{part}</>
+    ));
+  };
+
+
   return (
-    <div className="relative z-[3] flex flex-wrap gap-3 items-center self-start w-full mt-5 max-md:mr-2.5 max-md:w-full ">
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b210cd9ef03d02828cb17f37dd7fa79a537d7626353fca79dee8546a07f4833f?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c"
-        alt=""
-        className="object-contain shrink-0 aspect-[0.56] w-[11px] absolute left-1 top-1.5 max-md:w-[9px] max-md:top-2"
-      />
-      <p className="relative max-md:max-w-full indent-7">
-        {paragraphText} &#9646;
+    <div className={`flex flex-wrap gap-3 items-center mt-5 ${aligment} max-lg:justify-start`}>
+      <p className={`icon-paragraph relative pr-2 max-lg:w-full ${width} `}>
+        {replaceSymbolWithImage(paragraphText)} &#9646;
       </p>
     </div>
   );
