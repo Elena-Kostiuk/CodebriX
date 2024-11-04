@@ -11,13 +11,10 @@ const MetricsSection=() =>{
   return (
     <div
       aria-label="Key Metrics"
-      className="flex flex-wrap justify-between gap-10 mt-40 mr-20 max-md:mt-20 max-md:mr-0"
+      className="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 mt-40  max-md:mt-20 max-md:mr-0"
     >
       {metrics.map((metric, index) => (
-        <React.Fragment key={metric.id}>
-          <MetricCard {...metric} />
-          {index < metrics.length - 1 && <Divider />}
-        </React.Fragment>
+          <MetricCard key={metric.id} {...metric} />
       ))}
     </div>
   );
