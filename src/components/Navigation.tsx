@@ -17,7 +17,7 @@ const Navigation: React.FC = () => {
         {navigationItems.map((item, index) => (
           <li
             key={index}
-            className="gap-2 self-stretch px-6 py-2 my-auto text-center rounded-3xl cursor-pointer min-h-[40px] max-md:px-5 flex-shrink-0"
+            className="gap-2 self-stretch px-6 py-2 my-auto text-center rounded-3xl cursor-pointer min-h-[40px] max-lg:px-4 flex-shrink-0"
           >
             {item.hasDropdown ? (
               <div className="flex gap-2 justify-center items-center self-stretch my-auto">

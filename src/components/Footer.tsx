@@ -12,7 +12,7 @@ const links = [
 const Footer: React.FC = () => {
   return (
     <footer className="relative mt-40 max-md:mt-20 flex flex-col justify-start items-center ">
-      <h2 className="self-start font-medium tracking-tighter mb-20 indent-60 max-md:mb-10  max-md:indent-0 max-md:max-w-full  tracking-tightest">
+      <h2 className="self-start font-medium tracking-tighter mb-20 indent-60 max-md:mb-10  max-lg:indent-0 max-md:max-w-full  tracking-tightest">
         Made by IT consultants for IT consultants
       </h2>
       <EmailSignup />

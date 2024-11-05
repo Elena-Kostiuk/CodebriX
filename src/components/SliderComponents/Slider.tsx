@@ -3,54 +3,11 @@
 import React, { useState } from "react";
 import Slider from "react-slider";
 import { motion } from "framer-motion";
+import sliderData from "../../data/slider.json";
 import "../../app/styles/slider.css";
 
 const CustomSlider = () => {
   const [value, setValue] = useState(0);
-
-  const blocks = [
-    {
-      id: 1,
-      title: "[.1.]",
-      items: [
-        "> Fastest option for boilerplate tasks",
-        "> Drag & drop interface",
-        "> Workflow in UI",
-        "> 100% drag & drop",
-        "> Prebuilt components",
-      ],
-    },
-    {
-      id: 2,
-      title: "[.2.]",
-      items: [
-        "> 80% & 20% ",
-        "[ + ] Drag & drop interface",
-        "[ + ] Workflow in UI",
-        "[ + ] Prebuilt components",
-        "[ + ] Custom components",
-      ],
-    },
-    {
-      id: 3,
-      title: "[.3.]",
-      items: [
-        "> Unexpected Complexities",
-        "[ + ] Function as a Service with Custom backend logic",
-        "[ - ] Workflow in UI",
-      ],
-    },
-    {
-      id: 4,
-      title: "[.4.]",
-      items: [
-        "> Tweakable to the core",
-        "[ + ] export your project and build without limitations",
-        "[ - ] drag & drop interface",
-        "[ - ] workflow in UI",
-      ],
-    },
-  ];
 
   const getCurrentBlock = () => {
     if (value < 1) return 0;
@@ -81,7 +38,7 @@ const CustomSlider = () => {
       />
 
       <div className="blocks-container">
-        {blocks.map((block, index) => (
+        {sliderData.map((block, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0 }}

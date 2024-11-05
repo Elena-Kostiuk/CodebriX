@@ -10,8 +10,8 @@ const HeroSection: React.FC = () => {
   return (
     <MouseTracker>
       <Header />
-      <section className="relative  mt-10 ">
-        <h1 className="group text-[140px] tracking-tighter uppercase leading-[120px] text-neutral-900 max-xl:text-[100px] max-xl:leading-[85px] max-md:text-[60px] max-md:leading-[50px]">
+      <section className="relative  mt-10 max-md:mt-28 ">
+        <h1 className="group text-[140px] tracking-tighter uppercase leading-[120px] text-neutral-900 max-xl:text-[100px] max-xl:leading-[85px] max-md:text-[50px] max-md:leading-[42px]">
           <span className="relative z-[4] inline-block  pr-5 group-hover:bg-[#AFEDFF] bg-clip-content transition-colors duration-300">
             IT-consultants, ship&nbsp;{" "}
           </span>
@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
 
         <Description
           paragraphText="Built by Clojure-developers for result-oriented developers"
-          aligment="justify-end" width="w-[48%]"
+          aligment="justify-end" width="w-[50%]"
         />
 
         <VideoScreenWrapper />

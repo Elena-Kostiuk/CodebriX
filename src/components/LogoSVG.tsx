@@ -18,7 +18,7 @@ const LogoSVG: React.FC = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 1.5 }}
-      className="svg-container mt-[10%] py-[2%] w-[100%] border-t-2 border-dotted border-gray-300"
+      className="svg-container mt-[8%] py-[2%] w-[100%] border-t-2 border-dotted border-gray-300"
     >
       <Vector className="svg-icon w-[100%]" />
     </motion.div>

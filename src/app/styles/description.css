@@ -3,10 +3,10 @@
     display: inline-block;
     background-image: url("/images/chevron.png");
     background-size: contain;
-    background-image: no-repeat;
+    background-repeat: no-repeat;
     width: 10px; 
     height: 16px;
-    margin-right: 18px;
+    margin-right: 10px;
   }
   
   @media (max-width: 768px) {

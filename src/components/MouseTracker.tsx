@@ -2,18 +2,18 @@
 import React, { useState, useEffect } from "react";
 import SlipAnimationElement from "./SlipAnimationElement";
 
-const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const MouseTracker: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [showAnimated, setShowAnimated] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    // Only run in the browser
     const handleResize = () => {
       setIsDesktop(typeof window !== "undefined" && window.innerWidth >= 1024);
     };
 
-    // Check initial state if in browser
     if (typeof window !== "undefined") {
       handleResize();
       window.addEventListener("resize", handleResize);
@@ -72,7 +72,9 @@ const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => 
             transform: "translate(-50%, -50%)",
             zIndex: -1,
           }}
-          className={`transition-opacity duration-1000 ${showAnimated ? 'opacity-100' : 'opacity-0'}`}
+          className={`transition-opacity duration-1000 ${
+            showAnimated ? "opacity-100" : "opacity-0"
+          }`}
         >
           <SlipAnimationElement />
         </div>

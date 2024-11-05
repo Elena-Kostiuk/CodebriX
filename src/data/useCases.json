@@ -1,0 +1,31 @@
+{
+    "leftColumnApps": [
+      {
+        "title": "LMS",
+        "features": ["Unlimited users", "Custom widgets for domain-specific tasks"],
+        "counter": "[.1.]"
+      },
+      {
+        "title": "CRM",
+        "features": [""],
+        "counter": "[.2.]"
+      },
+      {
+        "title": "ERP",
+        "features": [""],
+        "counter": "[.3.]"
+      }
+    ],
+    "rightColumnApps": [
+      {
+        "title": "Interactive Dashboard",
+        "features": [""],
+        "counter": "[.4.]"
+      },
+      {
+        "title": "Admin Panel",
+        "features": [""],
+        "counter": "[.5.]"
+      }
+    ]
+  }

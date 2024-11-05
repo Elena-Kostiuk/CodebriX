@@ -21,15 +21,15 @@ const BrandsSlider: React.FC<DATASelectorProps> = ({ data }) => {
   );
 
   return (
-    <div className="relative  max-w-[49%] self-start overflow-auto scrollbar-none max-lg:max-w-full">
+    <div className="relative  max-w-[48%] self-start overflow-auto scrollbar-none max-lg:max-w-full">
       <div
-        className="absolute z-[2] left-0 top-0 w-[8%] h-[100%] bg-gradient-to-r from-white/95 to-white/20 cursor-pointer"
+        className="absolute z-[2] left-0 top-0 w-[8%] h-[100%] bg-gradient-to-r from-white/95 to-white/20 cursor-pointer max-lg:hidden"
         onMouseEnter={() => setHoverDirection("left")}
         onMouseLeave={() => setHoverDirection(null)}
       ></div>
 
       <motion.ul
-        className="flex gap-3 items-start justify-center  mt-5 mr-auto max-md:w-full"
+        className="flex gap-3 items-start justify-center  mt-5 mr-auto max-lg:justify-start max-md:w-full"
         aria-label="brand items"
         initial={{ x: 0 }}
         animate={{
@@ -53,7 +53,7 @@ const BrandsSlider: React.FC<DATASelectorProps> = ({ data }) => {
       </motion.ul>
 
       <div
-        className="absolute right-0 top-0 w-[4%] h-[100%] bg-gradient-to-r from-white/10 to-white/95 cursor-pointer"
+        className="absolute right-0 top-0 w-[4%] h-[100%] bg-gradient-to-r from-white/10 to-white/95 cursor-pointer max-lg:hidden"
         onMouseEnter={() => setHoverDirection("right")}
         onMouseLeave={() => setHoverDirection(null)}
       ></div>
