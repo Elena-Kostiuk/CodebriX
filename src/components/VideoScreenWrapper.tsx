@@ -101,7 +101,7 @@ const VideoScreenWrapper: React.FC = () => {
           >
             {!isPlaying && (
               <PlayIcon
-                className="absolute left-[40%] top-[35%]"
+                className="absolute z-[2] left-[40%] top-[35%]"
                 onClick={handleVideoPlay}
               />
             )}

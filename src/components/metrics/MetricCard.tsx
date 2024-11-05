@@ -18,7 +18,7 @@ const MetricCard =({
   subtitle,
 }: MetricCardProps) =>{
   return (
-    <article className="flex flex-col self-start h-full mt-6 border-dotted border-gray-300 
+    <article className="flex flex-col self-start mt-6 border-dotted border-gray-300 
     [&:nth-child(1)]:border-l-0 [&:nth-child(1)]:p-0
     md:border-l-2  md:pl-[15%] 
     md:odd:border-l-0 md:odd:pl-0 
