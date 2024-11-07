@@ -6,10 +6,11 @@ export interface AppSectionProps {
   title: string;
   features: string[];
   counter: string;
+  isClose: boolean;
 }
 
-const AppSection = ({ title, features, counter }: AppSectionProps) =>  {
-  const [isExpanded, setIsExpanded] = useState(false);
+const AppSection = ({ title, features, counter, isClose }: AppSectionProps) =>  {
+  const [isExpanded, setIsExpanded] = useState(!isClose);
 
   const toggleExpand = () => {
     setIsExpanded(prev => !prev);

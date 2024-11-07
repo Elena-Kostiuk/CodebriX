@@ -31,7 +31,6 @@ const VideoScreenWrapper: React.FC = () => {
   const width = useTransform(scrollY, [0, 900], ["50%", "100%"]);
 
   const handleVideoPlay = () => {
-    console.log("PLAYING VIDEO");
     if (videoRef.current) {
       setIsPlaying(true);
       videoRef.current.muted = true;

@@ -5,7 +5,7 @@ import React from "react";
 
 const Logo: React.FC = () => {
   return (
-    <div className="flex relative  grow shrink gap-2 items-center self-stretch my-auto w-2/5">
+    <div className="free-area flex relative  grow shrink gap-2 items-center self-stretch my-auto w-2/5">
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/eaff571623cef6e98308b27b34d75d460159bbb1b23ca187d40e0ef8e63f6684?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c"

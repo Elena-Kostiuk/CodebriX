@@ -3,29 +3,34 @@
       {
         "title": "LMS",
         "features": ["Unlimited users", "Custom widgets for domain-specific tasks"],
-        "counter": "[.1.]"
+        "counter": "[.1.]",
+        "isClose": false
       },
       {
         "title": "CRM",
         "features": [""],
-        "counter": "[.2.]"
+        "counter": "[.2.]",
+        "isClose": true
       },
       {
         "title": "ERP",
         "features": [""],
-        "counter": "[.3.]"
+        "counter": "[.3.]",
+        "isClose": true
       }
     ],
     "rightColumnApps": [
       {
         "title": "Interactive Dashboard",
         "features": [""],
-        "counter": "[.4.]"
+        "counter": "[.4.]",
+        "isClose": true
       },
       {
         "title": "Admin Panel",
         "features": [""],
-        "counter": "[.5.]"
+        "counter": "[.5.]",
+        "isClose": true
       }
     ]
   }

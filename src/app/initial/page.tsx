@@ -93,7 +93,7 @@ const InitialPage: React.FC = () => {
           Let us help you close the deal fast
         </h2>
         <p className="absolute top-[40px] left-[8px] text-[14px] leading-[20px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-lg:top-[8px]  max-md:text-[12px] max-md:leading-[18px] max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
-          #Development process
+          #Client relations 
         </p>
         <Dashboard data={clientRelations} />
       </section>

@@ -17,7 +17,7 @@ const Description: React.FC<InfoCardProps> = ({ paragraphText, aligment="self-st
 
 
   return (
-    <div className={`flex flex-wrap gap-3 items-center mt-5 ${aligment} max-lg:justify-start`}>
+    <div className={`free-area flex flex-wrap gap-3 items-center mt-5 ${aligment} max-lg:justify-start`}>
       <p className={`icon-paragraph relative pr-2 max-lg:w-full ${width} `}>
         {replaceSymbolWithImage(paragraphText)}&nbsp;&#9646;
       </p>

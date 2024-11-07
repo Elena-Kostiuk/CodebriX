@@ -49,6 +49,7 @@ button {
     line-height: 40px;
   }
 }
+
 @media (max-width: 768px) {
   body{
     font-size: 18px;

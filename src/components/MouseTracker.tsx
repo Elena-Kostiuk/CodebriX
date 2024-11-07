@@ -2,9 +2,7 @@
 import React, { useState, useEffect } from "react";
 import SlipAnimationElement from "./SlipAnimationElement";
 
-const MouseTracker: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [showAnimated, setShowAnimated] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isDesktop, setIsDesktop] = useState(false);
@@ -39,7 +37,15 @@ const MouseTracker: React.FC<{ children: React.ReactNode }> = ({
 
     const startTimeout = () => {
       timeout = setTimeout(() => {
-        setShowAnimated(true);
+        const elementUnderMouse = document.elementFromPoint(
+          mousePosition.x,
+          mousePosition.y
+        );
+        if (elementUnderMouse?.classList.contains("free-area")) {
+          setShowAnimated(true);
+        } else {
+          setShowAnimated(false);
+        }
       }, 5000);
     };
 
@@ -59,10 +65,10 @@ const MouseTracker: React.FC<{ children: React.ReactNode }> = ({
         clearTimeout(timeout);
       }
     };
-  }, [isDesktop]);
+  }, [isDesktop, mousePosition]);
 
   return (
-    <div className="relative">
+    <div className="free-area relative">
       {isDesktop && showAnimated && (
         <div
           style={{

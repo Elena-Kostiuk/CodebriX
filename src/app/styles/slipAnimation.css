@@ -2,6 +2,7 @@
   .rotation-container {
     width: 420px;
     height: 480px;
+    position: relative;
     animation: rotate-container 10s infinite linear;
   }
   
@@ -15,13 +16,16 @@
   }
   
   .circles-loader {
-    position: relative;
+    position: absolute;
     text-indent: -9999px;
     display: inline-block;
-    width: 380px;
-    height: 380px;
+    width: 580px;
+    height: 580px;
+    top: -150px;
+    left: -50px;
     background-image: url('/images/Ellipse4916.png');
     background-size: contain;
+    background-position: center;
     border-radius: 50%;
     animation: circles-loader 10s infinite linear; 
     transform-origin: center;
@@ -30,10 +34,10 @@
   .circles-loader::before {
     content: '';
     position: absolute;
-    width: 380px; 
-    height: 380px;
-    top: 140px;
-    left: -100px; 
+    width: 520px; 
+    height: 520px;
+    top: 220px;
+    left: -120px; 
     background-image: url('/images/Ellipse4918.png');
     background-size: cover;
     border-radius: 50%;
@@ -42,10 +46,10 @@
   .circles-loader::after {
     content: '';
     position: absolute;
-    width: 380px; 
-    height: 380px;
-    top: 140px; 
-    left: 100px; 
+    width: 480px; 
+    height: 480px;
+    top: 230px; 
+    left: 200px; 
     background-image: url('/images/Ellipse4919.png');
     background-size: cover;
     border-radius: 50%;
