@@ -13,7 +13,7 @@ const CustomerApps = () => {
             <AppSection key={index} {...app} />
           ))}
         </div>
-        <div className="flex flex-col ml-[6%] w-6/12 max-lg:ml-0 max-lg:w-full">
+        <div className="free-area flex flex-col ml-[6%] w-6/12 max-lg:ml-0 max-lg:w-full">
           {rightColumnApps.map((app, index) => (
             <AppSection key={index} {...app} />
           ))}

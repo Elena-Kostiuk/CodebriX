@@ -9,6 +9,29 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: "swap",
   weight: "400"
 });
+
+const neurealTrial = localFont({
+  src: [
+    {
+      path: './fonts/NeurealTrial-Mono.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/NeurealTrial-Mono.woff',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/NeurealTrial-Mono.otf',
+      weight: '400',
+      style: 'normal',
+    }
+  ],
+  variable: "--font-neureal-trial-mono",
+  display: "swap",
+})
+
 const roobertTRIAL = localFont({
   src: [
     {
@@ -49,7 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ibmPlexMono.variable} ${roobertTRIAL.variable} antialiased`}
+        className={`${ibmPlexMono.variable} ${roobertTRIAL.variable} ${neurealTrial.variable} antialiased`}
       >
         {children}
       </body>

@@ -10,8 +10,8 @@ const SliderWrapper: React.FC = () => {
   ];
 
   return (
-    <section className="relative  max-md:mt-20 ml-5 mt-40">
-      <div className="flex flex-wrap gap-5 justify-between self-stretch w-full  max-md:max-w-full">
+    <section className="relative free-area  max-md:mt-20 ml-5 mt-40">
+      <div className="free-area flex flex-wrap gap-5 justify-between self-stretch w-full  max-md:max-w-full">
         {items.map((item, index) => (
           <TextBlock key={index} subtitle={item.subtitle} title={item.title} />
         ))}

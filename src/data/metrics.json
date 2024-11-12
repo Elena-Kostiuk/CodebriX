@@ -8,7 +8,8 @@
     },
     {
       "id": "development-time",
-      "number": "x10",
+      "number": "10",
+      "prefixLetter": "x",
       "description": "Faster development time"
     },
     {
@@ -20,7 +21,7 @@
     {
       "id": "offline-mode",
       "number": "10",
-      "prefix": "Up to",
+      "prefixText": "Up to",
       "unit": "days",
       "description": "In offline mode"
     }

@@ -15,6 +15,7 @@ const config: Config = {
       fontFamily: {
         "ibm-plex-mono": ["var(--font-ibm-plex-mono)"],
         "robert-trial": ["var(--font-robert-trial-medium)"],
+        "neureal-trial": ["var(--font-neureal-trial-mono)"],
       },
       letterSpacing: {
         tightest: "-0.02em",

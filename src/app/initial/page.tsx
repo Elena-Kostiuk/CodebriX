@@ -15,14 +15,16 @@ import MetricsSection from "@/components/metrics/MetricsSection";
 import CustomerApps from "@/components/CustomerApps/CustomerApps";
 import Footer from "@/components/Footer";
 import Features from "@/components/FeaturesComponetns/Features";
+import MouseTracker from "@/components/MouseTracker";
 
 const InitialPage: React.FC = () => {
   return (
-    <main className="flex flex-col px-5  border-red-600">
+    <MouseTracker>
+  
       <HeroSection />
 
-      <section className="relative mt-40 max-md:mt-20">
-        <h2 className="flex flex-start flex-wrap tracking-tighter indent-60 mr-[240px] max-lg:indent-52 max-md:indent-0 max-md:max-w-fulltracking-tightest max-lg:mr-0">
+      <section className="relative z-[2] free-area mt-40 max-md:mt-20">
+        <h2 className="free-area font-medium flex flex-start flex-wrap tracking-tighter indent-60 mr-[240px] max-lg:indent-52 max-md:indent-0 max-md:max-w-fulltracking-tightest max-lg:mr-0">
           {" "}
           DevEx: Local first platform to make everything work fast
         </h2>
@@ -32,9 +34,9 @@ const InitialPage: React.FC = () => {
         <Dashboard data={developmentProcess1} />
       </section>
 
-      <section className="relative mt-40 max-md:mt-20">
+      <section className="relative free-area mt-40 max-md:mt-20">
         <h2>Local first platform to make everything work fast</h2>
-        <div className="flex justify-start  flex-wrap flex-row-reverse max-lg:flex-col">
+        <div className="free-area flex justify-start  flex-wrap flex-row-reverse max-lg:flex-col">
           <Screen title="Outer IDE">
             <div className="list-container object-contain bg-black  w-full  p-[20px] aspect-[1.94] text-[24px] leading-[32px] max-md:text-[16px] max-md:leading-[24px]  max-md:h-auto max-md:p-[16px]">
               <ol className="list-decimal text-white">
@@ -67,8 +69,8 @@ const InitialPage: React.FC = () => {
 
       <SliderWrapper />
 
-      <section className="relative mt-36 max-lg:mt-20">
-        <h2 className="font-medium tracking-tighter  max-md:max-w-full  tracking-tightest indent-60 max-lg:indent-52 max-md:indent-0">
+      <section className="relative free-area mt-36 max-lg:mt-20">
+        <h2 className="free-area font-medium tracking-tighter  max-md:max-w-full  tracking-tightest indent-60 max-lg:indent-52 max-md:indent-0">
           Low-code
           <img
             loading="lazy"
@@ -88,8 +90,8 @@ const InitialPage: React.FC = () => {
 
       <Integrations />
 
-      <section className="relative mt-40 max-md:mt-20">
-        <h2 className="font-medium tracking-tighter indent-60 max-lg:indent-52 max-md:indent-0 max-md:max-w-full  tracking-tightest">
+      <section className="relative free-area mt-40 max-md:mt-20">
+        <h2 className="inline-block font-medium tracking-tighter indent-60 max-lg:indent-52 max-md:indent-0 max-md:max-w-full  tracking-tightest">
           Let us help you close the deal fast
         </h2>
         <p className="absolute top-[40px] left-[8px] text-[14px] leading-[20px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-lg:top-[8px]  max-md:text-[12px] max-md:leading-[18px] max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
@@ -102,9 +104,9 @@ const InitialPage: React.FC = () => {
 
       <MetricsSection />
 
-      <section className="relative mt-40 max-md:mt-20">
-        <h2>Built by the team that shipped for</h2>
-        <div className="flex justify-start  flex-wrap  max-lg:flex-col">
+      <section className="relative free-area mt-40 max-md:mt-20">
+        <h2 className="inline-block">Built by the team that shipped for</h2>
+        <div className="free-area  flex justify-start  flex-wrap  max-lg:flex-col">
           <Screen title="Preview the new table in your dashboard">
             <div
               className="relative flex items-center justify-center bg-cover bg-center border-x border-solid border-neutral-900 w-full aspect-[2/1.1] max-lg:h-auto max-lg:h-auto"
@@ -123,8 +125,8 @@ const InitialPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="relative mt-40 max-md:mt-20 flex flex-col items-start">
-        <h2 className="font-medium tracking-tighter indent-60 max-lg:indent-40 max-md:indent-0  max-md:max-w-full  tracking-tightest">
+      <section className="relative free-area mt-40 max-md:mt-20 flex flex-col items-start">
+        <h2 className="inline-block font-medium tracking-tighter indent-60 max-lg:indent-40 max-md:indent-0  max-md:max-w-full  tracking-tightest">
           Create Interactive Customer-facing Apps
         </h2>
         <p className="absolute top-[40px] left-[8px] text-[14px] leading-[20px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-lg:top-[8px] max-md:text-[12px] max-md:leading-[18px] max-md:relative max-md:mt-4 max-md:top-auto  max-md:left-auto max-md:inline-block">
@@ -134,7 +136,8 @@ const InitialPage: React.FC = () => {
       </section>
 
       <Footer />
-    </main>
+ 
+    </MouseTracker>
   );
 };
 

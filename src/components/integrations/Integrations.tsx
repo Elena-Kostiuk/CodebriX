@@ -4,9 +4,9 @@ import integrationData from "../../data/integrationData.json";
 
 const Integrations: React.FC = () => {
   return (
-    <section className="relative mt-40 max-md:mt-20">
-      <h2>Connectors & Integrations</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mt-[26px]">
+    <section className="relative z-[2] free-area mt-40 max-md:mt-20">
+      <h2 className="inline-block">Connectors & Integrations</h2>
+      <div className="free-area grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mt-[26px]">
         {integrationData.map((integration, index) => (
           <IntegrationCard
             key={index}

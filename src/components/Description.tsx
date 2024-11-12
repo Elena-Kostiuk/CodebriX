@@ -5,9 +5,10 @@ type InfoCardProps = {
   paragraphText: string;
   width?: string;
   aligment?: string;
+  cursor?: boolean;
 }
 
-const Description: React.FC<InfoCardProps> = ({ paragraphText, aligment="self-start",width=" w-full"}) => {
+const Description: React.FC<InfoCardProps> = ({ paragraphText, aligment="self-start",width=" w-full", cursor=true}) => {
   
   const replaceSymbolWithImage = (text: string) => {
     return text.split("&").map((part, index) => (
@@ -17,9 +18,11 @@ const Description: React.FC<InfoCardProps> = ({ paragraphText, aligment="self-st
 
 
   return (
-    <div className={`free-area flex flex-wrap gap-3 items-center mt-5 ${aligment} max-lg:justify-start`}>
-      <p className={`icon-paragraph relative pr-2 max-lg:w-full ${width} `}>
-        {replaceSymbolWithImage(paragraphText)}&nbsp;&#9646;
+    <div className={`free-area flex flex-wrap gap-3 items-center mt-5 ${aligment} ${
+        !cursor ? 'inline whitespace-nowrap' : ''} max-lg:justify-start`}>
+      <p className={`icon-paragraph relative pr-2 max-lg:w-full ${width}`}>
+        {replaceSymbolWithImage(paragraphText)}&nbsp;
+        {cursor ? <span>&#9646;</span> : null}
       </p>
     </div>
   );

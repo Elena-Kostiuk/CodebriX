@@ -26,3 +26,18 @@
 .list-container:hover .green {
   color: #27bf7e;
 }
+
+
+.container-tooltip .custom-tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; 
+  height: 28px;
+  color: black; 
+  border-radius: 16px; 
+  border: 1px dashed black; 
+  /* padding: 8px 12px;  */
+  font-size: 14px;
+}
+

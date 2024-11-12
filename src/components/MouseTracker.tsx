@@ -37,16 +37,19 @@ const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 
     const startTimeout = () => {
       timeout = setTimeout(() => {
+    
         const elementUnderMouse = document.elementFromPoint(
           mousePosition.x,
           mousePosition.y
         );
+
+       
         if (elementUnderMouse?.classList.contains("free-area")) {
           setShowAnimated(true);
         } else {
           setShowAnimated(false);
         }
-      }, 5000);
+      }, 2000); 
     };
 
     const resetTimeout = () => {
@@ -67,16 +70,25 @@ const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => 
     };
   }, [isDesktop, mousePosition]);
 
+  const getMousePositionWithOffset = () => {
+  
+    const rect = document.documentElement.getBoundingClientRect();
+    return {
+      x: mousePosition.x - rect.left, 
+      y: mousePosition.y - rect.top,  
+    };
+  };
+
   return (
-    <div className="free-area relative">
+    <div className="free-area relative px-5">
       {isDesktop && showAnimated && (
         <div
           style={{
             position: "absolute",
-            top: mousePosition.y,
-            left: mousePosition.x,
-            transform: "translate(-50%, -50%)",
-            zIndex: -1,
+            top: getMousePositionWithOffset().y,  
+            left: getMousePositionWithOffset().x, 
+            transform: "translate(-50%, -50%)",  
+            zIndex: -1,  
           }}
           className={`transition-opacity duration-1000 ${
             showAnimated ? "opacity-100" : "opacity-0"

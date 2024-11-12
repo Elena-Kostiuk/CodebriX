@@ -37,7 +37,7 @@ const CustomSlider = () => {
         renderThumb={(props) => <div {...props} className="custom-thumb" />}
       />
 
-      <div className="blocks-container">
+      <div className="free-area  blocks-container">
         {sliderData.map((block, index) => (
           <motion.div
             key={index}
