@@ -28,7 +28,7 @@ const EmailSignup: React.FC = () => {
       >
         Sign up for private Beta
       </button>
-      <p className="self-stretch my-auto text-[14px] leading-[20px] max-md:text-[12px] max-md:leading-[18px]">
+      <p className="label-text self-stretch my-auto ">
         [...] No credit card required
       </p>
     </form>

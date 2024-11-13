@@ -8,11 +8,30 @@
     height: 16px;
     margin-right: 10px;
   }
-  
-  @media (max-width: 768px) {
+  @media (max-width: 1280px) {
+    .icon-paragraph::before {
+      width: 8px; 
+      height: 13px;
+    
+    }
+  }
+  @media (max-width: 1024px) {
     .icon-paragraph::before {
       width: 6px; 
-      height: 12px;
-    
+      height: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .icon-paragraph::before {
+      width: 7px; 
+      height: 11px;
+    }
+  }
+  @media (max-width: 430px) {
+    .icon-paragraph::before {
+      width: 6px; 
+      height: 8px;
+      margin-right: 8px;
     }
   }

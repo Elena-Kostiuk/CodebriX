@@ -88,7 +88,7 @@ const Block: React.FC<{
         animationDelay: animationDelay,
       }}
     >
-      <h4 className="mx-auto text-[14px] max-md:text-[12px]">
+      <h4 className="label-text mx-auto">
         [.{index + 1}.]
       </h4>
       <div className="flex flex-col w-full rounded-lg max-md:h-auto">

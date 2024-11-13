@@ -17,7 +17,7 @@ const Screen: React.FC<ScreenProps> = ({
 
   return (
     <section
-      className={`flex overflow-hidden flex-col self-end ${width} px-3 py-2.5 text-[14px] leading-[20px] max-md:text-[12px] max-md:leading-[18px] bg-white border border-solid mt-5 border-neutral-900 max-md:px-2 max-md:py-1 max-lg:w-full  duration-300 ease-in-out`}
+      className={`flex overflow-hidden flex-col self-end ${width} px-3 py-2.5 bg-white border border-solid mt-5 border-neutral-900 max-md:px-2 max-md:py-1 max-lg:w-full  duration-300 ease-in-out`}
     >
       <div className="flex gap-4 justify-between items-center w-full mb-2 max-md:gap-2 max-md:mb-1 max-md:max-w-full">
         <img
@@ -32,7 +32,7 @@ const Screen: React.FC<ScreenProps> = ({
           aria-hidden="true"
         />
 
-        <h4 className="flex gap-3 items-center self-stretch my-auto max-md:gap-1">
+        <h4 className="label-text flex gap-3 items-center self-stretch my-auto max-md:gap-1">
           [..] &gt; "{title}"
         </h4>
 

@@ -101,8 +101,8 @@ const VideoScreenWrapper: React.FC = () => {
             )}
             {isPlaying && (
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=ar_kiKRala8"
-                playing
+              url="/video/CodebriX.mp4"
+                playing={isPlaying}
                 controls
                 width="100%"
                 height="100%"

@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         {links.map((item, index) => (
           <a
             key={index}
-            className={`cursor-pointer ${item.style} transition duration-500 ease-in-out text-[14px] leading-[20px] mr-3 gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-md:text-[12px] max-md:leading-[18px] max-md:relative  max-md:top-auto max-md:left-auto max-md:inline-block`}
+            className={`cursor-pointer ${item.style} transition duration-500 ease-in-out text-[14px] leading-[20px] mr-3 gap-2.5 px-4 py-1 rounded-2xl border border-dashed border-neutral-900 max-md:text-[12px] max-md:leading-[18px] max-md:relative  max-md:top-auto max-md:left-auto max-md:inline-block`}
           >
             {item.name}
           </a>

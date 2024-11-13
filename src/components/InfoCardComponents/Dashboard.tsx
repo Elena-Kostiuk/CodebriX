@@ -21,7 +21,7 @@ const Dashboard: React.FC<DashboardProps> = ({ data, width = "w-full" }) => {
           key={index}
           className="free-area flex flex-col items-center w-full mt-24 sm:w-[calc(50%-10px)] lg:w-[calc(33.33%-10px)] relative max-lg:mt-10"
         >
-          <h4 className="mx-auto text-[14px]  max-md:text-[12px]">
+          <h4 className="label-text mx-auto">
             [.{index + 1}.]
           </h4>
           <Card

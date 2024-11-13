@@ -31,7 +31,7 @@ const AnimatedScreenBlock: React.FC = () => {
                   loading="lazy"
                   src={screen.src}
                   alt={screen.header}
-                  className="object-contain w-[100%] max-w-[618px] max-md:w-full max-md:h-auto"
+                  className="object-contain w-[74.7%] h-[76.5%]"
                 />
               </div>
             </Screen>

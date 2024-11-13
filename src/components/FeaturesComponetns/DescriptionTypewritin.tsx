@@ -40,7 +40,7 @@ const DescriptionTypewriting: React.FC<InfoCardProps> = ({
         alt=""
         className="object-contain shrink-0 aspect-[0.56] w-[11px] absolute left-1 top-1.5 max-md:w-[9px] max-md:top-2"
       />}
-      <p className={`relative max-md:max-w-full indent-7 ${width}`}>
+      <p className={`relative max-md:max-w-full ${prefix ? "indent-7" : "indent-[12em]"}  ${width}`}>
         {shouldStartTyping && !isTypingComplete ? (
           <Typewriter
             words={[paragraphText]}

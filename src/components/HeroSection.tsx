@@ -11,14 +11,14 @@ const HeroSection: React.FC = () => {
   return (
     <>
       <Header />
-      <section className="flex flex-col relative z-[2] free-area  mt-10 max-md:mt-28 ">
-        <h1 className="relative z-[1] free-area inline group text-[140px] tracking-tighter uppercase leading-[120px] text-neutral-900 max-xl:text-[100px] max-xl:leading-[86px] max-md:text-[50px] max-md:leading-[42px]">
+      <section className="flex flex-col relative z-[2] free-area  mt-10 ">
+        <h1 className="relative z-[1] free-area inline group text-[140px] tracking-tighter uppercase leading-[120px] text-neutral-900 max-2xl:text-[92px] max-2xl:leading-[80px] max-lg:text-[69px] max-lg:leading-[60px] max-md:text-[36px] max-md:leading-[36px] max-[430px]:text-[28.47px] max-md:leading-[28.47px]">
           <span className="relative z-[4] inline-block  pr-5 ">
             IT-consultants, ship{" "}
-          </span>
+          </span><br/>
           <span className="relative z-[3] inline-block pr-5 ">
             production-ready{" "}
-          </span>
+          </span><br/>
           <span className="relative z-[3] inline-block pr-5 ">
             apps&nbsp;
             <span className="font-neureal-trial lowercase">x</span>10
@@ -26,11 +26,13 @@ const HeroSection: React.FC = () => {
           </span>
         </h1>
 
-        <div className="flex w-[75%] ">
+        <div className="relative flex w-[65%] ">
+          <div className="absolute top-0 left-0">
           <Description
             paragraphText="Hybrid low-code &"
             cursor={false}
           />
+          </div>
           <DescriptionTypewriting
             paragraphText="full-code platform with the resource-based pricing model"
             index={0}
