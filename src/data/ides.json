@@ -4,10 +4,6 @@
     { "name": "Vim", "icon": "/images/icons/vim.png", "iconAlt": "Vim editor icon" },
     { "name": "Sublime", "icon": "/images/icons/sublime.png", "iconAlt": "Sublime Text editor icon" },
     { "name": "others IDE" },
-    { "name": "JetBrains", "icon": "/images/icons/jetbrains.png", "iconAlt": "JetBrains IDE icon" },
-    { "name": "Visual Studio Code", "icon": "/images/icons/vscode.png", "iconAlt": "VS Code editor icon" },
-    { "name": "EMACS", "icon": "/images/icons/emacs.png", "iconAlt": "Emacs editor icon" },
-    { "name": "Vim", "icon": "/images/icons/vim.png", "iconAlt": "Vim editor icon" },
-    { "name": "Sublime", "icon": "/images/icons/sublime.png", "iconAlt": "Sublime Text editor icon" }
+    { "name": "JetBrains", "icon": "/images/icons/jetbrains.png", "iconAlt": "JetBrains IDE icon" }
   ]
   

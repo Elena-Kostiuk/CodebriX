@@ -1,7 +1,4 @@
-
-
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { BrandItem } from "./BrandItem";
 import "../app/styles/brandSlider.css";
@@ -15,34 +12,24 @@ interface DATAItem {
 interface DATASelectorProps {
   data: DATAItem[];
 }
+
 const BrandsSlider: React.FC<DATASelectorProps> = ({ data }) => {
-  const [hoverDirection, setHoverDirection] = useState<"left" | "right" | null>(
-    null
-  );
+  const repeatedData = [...data, ...data, ...data, ...data];
 
   return (
-    <div className="relative  max-w-[48%] self-start overflow-auto scrollbar-none max-lg:max-w-full">
-      <div
-        className="absolute z-[2] left-0 top-0 w-[8%] h-[100%] bg-gradient-to-r from-white/95 to-white/20 cursor-pointer max-lg:hidden"
-        onMouseEnter={() => setHoverDirection("left")}
-        onMouseLeave={() => setHoverDirection(null)}
-      ></div>
-
-      <motion.ul
-        className="flex gap-3 items-start justify-center  mt-5 mr-auto max-lg:justify-start max-md:w-full"
-        aria-label="brand items"
+    <div className="slider-container mt-5 overflow-hidden  self-start max-lg:max-w-full">
+      <motion.div
+        className="flex gap-5"
         initial={{ x: 0 }}
-        animate={{
-          x:
-            hoverDirection === "left"
-              ? "55%"
-              : hoverDirection === "right"
-              ? "-55%"
-              : 0,
+        animate={{ x: "-50%" }} 
+        transition={{
+          repeat: Infinity,
+          ease: "linear",
+          duration: 30, 
         }}
-        transition={{ duration: 0.5 }}
       >
-        {data.map((item, index) => (
+     
+        {repeatedData.map((item, index) => (
           <BrandItem
             key={`${item.name}-${index}`}
             name={item.name}
@@ -50,13 +37,7 @@ const BrandsSlider: React.FC<DATASelectorProps> = ({ data }) => {
             iconAlt={item.iconAlt}
           />
         ))}
-      </motion.ul>
-
-      <div
-        className="absolute right-0 top-0 w-[4%] h-[100%] bg-gradient-to-r from-white/10 to-white/95 cursor-pointer max-lg:hidden"
-        onMouseEnter={() => setHoverDirection("right")}
-        onMouseLeave={() => setHoverDirection(null)}
-      ></div>
+      </motion.div>
     </div>
   );
 };
