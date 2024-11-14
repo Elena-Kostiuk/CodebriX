@@ -21,7 +21,6 @@
   background: black;
   position: absolute;
   top: -5px;
-  /* margin-left: 5px; */
 }
 
 .custom-mark:last-child {
@@ -49,7 +48,6 @@
 .blocks-container h4 {
   padding-top: 50px;
   margin-bottom: 12px;
-  font-size: 14px;
   font-weight: normal;
 }
 
@@ -57,7 +55,6 @@
   list-style-type: none;
   padding: 0 20px;
   text-align: left;
-  font-size: 24px;
 }
 
 
@@ -73,9 +70,6 @@
   .blocks-container {
     display: block;
     width: 100%;
-  }
-  .blocks-container ul {
-    font-size: 18px;
   }
 
   .blocks-container > div {

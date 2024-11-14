@@ -19,7 +19,7 @@ const AppSection = ({ title, features, counter, isClose }: AppSectionProps) =>  
   return (
     <article className="flex flex-col w-full pt-10 max-md:mt-5 max-md:max-w-full max-md:pt-0">
       <div className="flex flex-wrap gap-5 justify-between items-end max-md:max-w-full">
-        <h3 className="font-medium leading-tight max-md:w-[50%]">
+        <h3 className="max-md:w-[50%]">
           {title}
         </h3>
         <button
@@ -34,7 +34,7 @@ const AppSection = ({ title, features, counter, isClose }: AppSectionProps) =>  
     
       {isExpanded && (
         <>
-        <span className="self-center mt-5 text-[14px] leading-[20px] max-md:text-[12px] max-md:leading-[18px]">
+        <span className="label-text self-center mt-5">
         {counter}
       </span>
         

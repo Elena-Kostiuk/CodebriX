@@ -110,7 +110,7 @@ const InitialPage: React.FC = () => {
             loading="lazy"
             src="/images/previewTable.png"
             alt="Preview the new table in your dashboard"
-            className="object-contain w-[74.7%] h-[76.5%]"
+            className="object-contain w-[67.8%]"
           />
         </div>
       </ContentPanel>

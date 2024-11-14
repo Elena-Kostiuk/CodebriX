@@ -30,7 +30,7 @@ export function IntegrationCard({
         </p>
         <h3 className="mt-2 font-medium ">{title}</h3>
       </div>
-      <div className="flex flex-wrap gap-3 items-start mt-7 w-full leading-none">
+      <div className="flex flex-wrap gap-3 items-start mt-7 w-full leading-none max-sm:mt-3">
         {items.map((item, index) => (
           <IntegrationItem key={index} item={item} />
         ))}

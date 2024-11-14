@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
   return (
     <>
       <Header />
-      <section className="flex flex-col relative z-[2] free-area  mt-10 ">
+      <section className="flex flex-col relative z-[2] free-area  mt-10 max-sm:mt-4 ">
         <h1 className="relative z-[1] free-area inline group text-[140px] tracking-tighter uppercase leading-[120px] text-neutral-900 max-2xl:text-[92px] max-2xl:leading-[80px] max-lg:text-[69px] max-lg:leading-[60px] max-md:text-[36px] max-md:leading-[36px] max-[430px]:text-[28.47px] max-[430px]:leading-[28.47px]">
           <span className="relative z-[4] inline-block  pr-5 ">
             IT-consultants, ship{" "}

@@ -60,7 +60,7 @@ const CustomSlider = () => {
             }}
           >
             <div>
-              <h4>{block.title}</h4>
+              <h4 className="label-text">{block.title}</h4>
               <ul>
                 {block.items.map((item, idx) => (
                   <li key={idx}>{item}</li>

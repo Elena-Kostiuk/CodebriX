@@ -39,7 +39,7 @@ const FeaturesBlocksWrapper = () => {
         <div className="flex w-full flex-col justify-start mt-10">
           {featuresData.map((item, index) => (
             <div key={index} className="flex flex-col ">
-              <h4 className="mx-auto text-[14px] mt-12  max-md:text-[12px]">
+              <h4 className="label-text mx-auto mt-12">
                 [.{index + 1}.]
               </h4>
               <Card
@@ -49,12 +49,18 @@ const FeaturesBlocksWrapper = () => {
                 className="flex flex-col w-full  mb-5 rounded-lg  max-md:min-h-0"
               />
               <Screen title={item.header} width="w-full">
-                <img
-                  loading="lazy"
-                  src={item.src}
-                  alt={item.header}
-                  className="object-contain w-full h-auto"
-                />
+              <div
+          className="relative flex items-center justify-center bg-cover bg-center border-x border-solid border-neutral-900 w-full aspect-[2/1.1] max-lg:h-auto max-lg:h-auto"
+          style={{ backgroundImage: "url('/images/background.png')" }}
+        >
+          <img
+            loading="lazy"
+            src={item.src}
+            alt={item.header}
+            className="object-contain w-[67.8%]"
+          />
+        </div>
+
               </Screen>
             </div>
           ))}
