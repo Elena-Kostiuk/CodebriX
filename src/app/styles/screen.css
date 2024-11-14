@@ -40,3 +40,14 @@
   font-size: 14px;
 }
 
+.video-screen-wrapper {
+  width: 100%;
+  transform-origin: center;
+}
+
+@media (min-width: 1024px) {
+  .video-screen-wrapper {
+    width: 50%;
+    transform-origin: top right;
+  }
+}

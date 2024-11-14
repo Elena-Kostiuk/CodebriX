@@ -6,9 +6,6 @@
   background-position: center;
   transition: background-image 0.5s ease;
 }
-.svg-icon.disabled {
-  background-image: url("/images/logoFooterOrange.svg");
-}
 
 .svg-icon:hover {
   background-image: url("/images/logoFooterGradient.svg");
