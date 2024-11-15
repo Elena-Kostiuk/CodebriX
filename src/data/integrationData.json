@@ -5,27 +5,27 @@
       "hoverColor":"hover-blue",
       "items": [
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/2c5fd36923665549582ad8f0fc2a24b685fbd6100e5b350d8e3e020c60241e0f?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "/images/icons/mySQL.svg",
           "name": "MySQL"
         },
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/4ef4b5eea731581989bedcc922c49ffae013f7648a6cfc6107cb8513be6f3219?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "/images/icons/postgreSQL.svg",
           "name": "PostgreSQL"
         },
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/e725b868c96b1ecf7e23bbbf07d526d744ebe3caa29f741b1e1af3e6dff7db57?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "/images/icons/graphQL.svg",
           "name": "GraphQL"
         },
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/e9533a75b61dd4422a4b7901750b7b3539eb4c073611522b00c509743c1e36fd?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "/images/icons/mongoDB.svg",
           "name": "MongoDB"
         },
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/f7ab66229a086396cde0cbb000d620c6a004781a9ba5ea0509ac878abc5058b1?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "/images/icons/spreadsheets.svg",
           "name": "Google Spreadsheets"
         },
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/091853c23e03d2f0c0ae453339ace6e3fed6db2be109109427a1c0915b094680?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "images/icons/excel.svg",
           "name": "Excel"
         }
       ]
@@ -36,11 +36,11 @@
       "hoverColor":"hover-green",
       "items": [
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/be8788c5d37aa3c8d717ba8ee4469496eba35fd4db71307d77e4431303ccefdc?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "images/icons/slack.svg",
           "name": "Slack"
         },
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/b70910b355e6b1ebc8822d4e0205322240bdb56c709449ce6b1322a1f825d744?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "images/icons/mailChimp.svg",
           "name": "MailChimp"
         }
       ]
@@ -51,7 +51,7 @@
       "hoverColor":"hover-orange",
       "items": [
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/c7fb6fb7cef8beb751863fc3312c6f4f555a14c3491442722a3cdab56188fa72?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "images/icons/stripe.svg",
           "name": "Stripe"
         }
       ]
@@ -62,7 +62,7 @@
       "hoverColor":"hover-orange",
       "items": [
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/4da5b0d641a853b147a83a95a606adf0724b4d24fd18b44446678a53dc555e42?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "images/icons/rest.svg",
           "name": "REST"
         }
       ]
@@ -73,7 +73,7 @@
       "hoverColor":"hover-blue",
       "items": [
         {
-          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/2124809d814896448ec2eb84bdf18348e6ea4f5275c6caccf6ef6fb7738479ba?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c",
+          "icon": "images/icons/infura.svg",
           "name": "Infura"
         }
       ]

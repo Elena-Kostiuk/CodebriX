@@ -1,25 +1,25 @@
 [
   {
     "header": "Create a query",
-    "src": "/images/createQuery.png",
+    "src": "/images/preview2.png",
     "title":"SSO:",
     "text": "Single Sign-On (SSO) supports seamless integration with Okta and Auth0, allowing users to access the low-code platform using their existing credentials and streamlining the authentication process"
   },
   {
     "header": "Write your custom query",
-    "src": "/images/writeQuery.png",
+    "src": "/images/preview3.png",
     "title":"Role level permissions:",
     "text": "Role-level permissions let you define and manage access for different users based on their roles, ensuring that each person can only view or modify the parts of the application relevant to their responsibilities"
   },
   {
     "header": "Add a custom component from the library",
-    "src": "/images/addComponent.png",
+    "src": "/images/preview4.png",
     "title":"On-premise deployment:",
     "text": "On-premise deployment allows you to install and run the low-code platform directly on your own servers, giving you complete control over your infrastructure and data"
   },
   {
     "header": "Set up the table",
-    "src": "/images/setUpTable.png",
+    "src": "/images/preview5.png",
     "title":"Offline mode:",
     "text": "Sync little subsets of your Postgres data into local apps and back. For businesses that rely on field workers in remote locations and with limited internet access. Up to 10 days async data upload"
   }

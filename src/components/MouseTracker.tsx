@@ -80,7 +80,7 @@ const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => 
   };
 
   return (
-    <div className="free-area relative px-5">
+    <div className="free-area relative px-5 max-sm:px-3">
       {isDesktop && showAnimated && (
         <div
           style={{

@@ -85,10 +85,10 @@ const InitialPage: React.FC = () => {
       <Integrations />
 
       <section className="relative free-area mt-40 max-md:mt-20">
-        <h2 className="inline-block font-medium tracking-tighter indent-60 max-lg:indent-52  max-md:indent-0 max-md:max-w-full  tracking-tightest">
+        <h2 className="free-area font-medium tracking-tighter indent-60 max-lg:indent-52  max-md:indent-0 max-md:max-w-full  tracking-tightest">
           Let us help you close the deal fast
         </h2>
-        <p className="label-text absolute top-[40px] left-[8px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-lg:top-[8px]   max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
+        <p className="label-text  absolute top-[40px] left-[8px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-lg:top-[8px] max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
           #Client relations
         </p>
         <Dashboard data={clientRelations} />
@@ -108,7 +108,7 @@ const InitialPage: React.FC = () => {
         >
           <img
             loading="lazy"
-            src="/images/previewTable.png"
+            src="/images/preview6.png"
             alt="Preview the new table in your dashboard"
             className="object-contain w-[67.8%]"
           />

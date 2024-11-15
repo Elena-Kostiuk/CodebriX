@@ -24,7 +24,7 @@ const Screen: React.FC<ScreenProps> = ({
       <div className="flex gap-4 justify-between items-center w-full mb-2 max-md:gap-2 max-md:mb-1 max-md:max-w-full">
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/e78bbef0900bf6196dd4b4ce7650c2ad36fc0b031027add6125589e1392cf973?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c"
+          src="/images/logoPin.svg"
           alt=""
           className="object-contain shrink-0 self-stretch my-auto w-5 aspect-square max-md:w-3 max-md:aspect-square"
         />

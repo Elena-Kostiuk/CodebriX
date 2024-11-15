@@ -34,9 +34,9 @@ const Footer: React.FC = () => {
           </p>
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/eaff571623cef6e98308b27b34d75d460159bbb1b23ca187d40e0ef8e63f6684?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c"
+            src="/images/logoPin.svg"
             alt=""
-            className="object-contain shrink-0 self-stretch my-auto w-5 aspect-square max-md:w-2 max-md:aspect-square"
+            className="object-contain shrink-0 self-stretch ml-2 w-5 aspect-square max-md:w-2 max-md:aspect-square"
           />
         </div>
       </div>

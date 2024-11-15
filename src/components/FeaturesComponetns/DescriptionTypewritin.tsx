@@ -37,7 +37,7 @@ const DescriptionTypewriting: React.FC<InfoCardProps> = ({
       {prefix && (
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/b210cd9ef03d02828cb17f37dd7fa79a537d7626353fca79dee8546a07f4833f?placeholderIfAbsent=true&apiKey=91b63c92872e4a9fbc65bfa4b6faa19c"
+          src="/images/chevron.svg"
           alt=""
           className="object-contain shrink-0 aspect-[0.56] w-[10px] absolute left-1 top-1.5 max-xl:w-[8px] max-lg:w-[6px] max-lg:top-1 max-md:w-[7px] max-md:top-[6px] max-[430px]:w-[6px] max-[430px]:top-[3px]"
         />

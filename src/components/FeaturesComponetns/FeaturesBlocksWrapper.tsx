@@ -36,10 +36,10 @@ const FeaturesBlocksWrapper = () => {
           <AnimatedScreenBlock />
         </div>
       ) : (
-        <div className="flex w-full flex-col justify-start mt-10">
+        <div className="flex w-full flex-col justify-start">
           {featuresData.map((item, index) => (
             <div key={index} className="flex flex-col ">
-              <h4 className="label-text mx-auto mt-12">
+              <h4 className="label-text mx-auto mt-8">
                 [.{index + 1}.]
               </h4>
               <Card

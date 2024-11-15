@@ -14,12 +14,12 @@ interface DashboardProps {
 const Dashboard: React.FC<DashboardProps> = ({ data, width = "w-full" }) => {
   return (
     <div
-      className={`free-area flex flex-wrap ${width} justify-start gap-x-3 border-b-2 border-black pb-10 relative overflow-hidden `}
+      className={`free-area  flex flex-wrap ${width} justify-start gap-x-3 border-b-2 border-black pb-10 relative overflow-hidden `}
     >
       {data.map((card: CardProps, index: number) => (
         <div
           key={index}
-          className="free-area flex flex-col items-center w-full mt-24 sm:w-[calc(50%-10px)] lg:w-[calc(33.33%-10px)] relative max-lg:mt-10"
+          className="free-area  flex flex-col items-center mt-8 w-[32%] pl-5 relative border-r-2 border-dotted border-gray-300 max-lg:pl-2 max-lg:mt-10 max-lg:h-auto max-md:w-auto max-md:pl-0 max-md:border-r-0 [&:nth-child(3)]:border-r-0 last:border-r-0 [&:nth-child(4)]:pl-0 first:pl-0 "
         >
           <h4 className="label-text mx-auto">
             [.{index + 1}.]
@@ -28,11 +28,8 @@ const Dashboard: React.FC<DashboardProps> = ({ data, width = "w-full" }) => {
             number={index + 1}
             title={card.title}
             descriptionText={card.text}
-            className="flex flex-col w-full min-h-[196px]  rounded-lg max-w-[541px] max-md:min-h-0"
+            className="flex flex-col w-full min-h-[196px]  rounded-lg max-w-[541px] max-lg:min-h-0 max-md:min-h-0"
           />
-          {index < data.length - 1 && (
-            <div className="absolute bottom-0 right-[-1px] w-[1px] h-[85%] border-r-2 border-dotted border-gray-300 max-md:hidden" />
-          )}
         </div>
       ))}
     </div>
