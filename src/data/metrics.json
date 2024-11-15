@@ -1,26 +1,26 @@
 [
     {
-      "id": "response-time",
-      "number": "50",
+      "id": 1,
+      "number": 50,
       "unit": "ms",
       "description": "Response time",
       "subtitle": "Local-first platform"
     },
     {
-      "id": "development-time",
-      "number": "10",
+      "id": 2,
+      "number": 10,
       "prefixLetter": "x",
       "description": "Faster development time"
     },
     {
-      "id": "first-app",
-      "number": "20",
+      "id": 3,
+      "number": 20,
       "unit": "mins",
       "description": "Zero to first app"
     },
     {
-      "id": "offline-mode",
-      "number": "10",
+      "id": 4,
+      "number": 10,
       "prefixText": "Up to",
       "unit": "days",
       "description": "In offline mode"

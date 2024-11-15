@@ -7,9 +7,10 @@ const MetricsSection=() =>{
   return (
     <section
       aria-label="Key Metrics"
-      className="free-area grid gap-5 grid-cols-2 md:grid-cols-4  mt-40  max-md:mt-20 max-md:mr-0"
+      className="free-area grid  grid-cols-2 md:grid-cols-4  mt-40  max-md:mt-20 max-md:mr-0"
+      
     >
-      {metrics.map((metric, index) => (
+      {metrics.map((metric) => (
           <MetricCard key={metric.id} {...metric} />
       ))}
     </section>
