@@ -17,7 +17,7 @@ const AppSection = ({ title, features, counter, isClose }: AppSectionProps) =>  
   };
 
   return (
-    <article className="flex flex-col w-full pt-10 max-md:mt-3 max-md:max-w-full max-md:pt-0">
+    <article className="flex flex-col w-full pt-10 max-md:mt-3 max-md:max-w-full max-lg:pt-0">
       <div className="flex flex-wrap gap-5 justify-between items-end max-md:max-w-full">
         <h3 className="max-md:w-[50%]">
           {title}
@@ -49,7 +49,7 @@ const AppSection = ({ title, features, counter, isClose }: AppSectionProps) =>  
         </>
       )}
 
-      <div className="shrink-0 mt-5 h-px border-b-2 border-dotted border-gray-300 max-md:max-w-full" role="separator" />
+      <div className="shrink-0 mt-5 h-px border-b-2 border-dotted border-gray-300 max-md:max-w-full max-lg:mt-2" role="separator" />
     </article>
   );
 }

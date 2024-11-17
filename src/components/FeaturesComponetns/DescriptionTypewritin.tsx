@@ -37,7 +37,7 @@ const DescriptionTypewriting: React.FC<InfoCardProps> = ({
       {prefix && (
         <img
           loading="lazy"
-          src="/images/chevron.svg"
+          src="/images/chevron.png"
           alt=""
           className="object-contain shrink-0 aspect-[0.56] w-[10px] absolute left-1 top-1.5 max-xl:w-[8px] max-lg:w-[6px] max-lg:top-1 max-md:w-[7px] max-md:top-[6px] max-[430px]:w-[6px] max-[430px]:top-[3px]"
         />

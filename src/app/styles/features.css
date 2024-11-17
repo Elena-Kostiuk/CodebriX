@@ -44,4 +44,14 @@
 .screen-container {
   animation: slideIn 1s ease forwards;
   visibility: hidden;
+  transform-origin: right bottom ; 
+  right: 0;
+}
+
+
+.screen-container.expanded {
+  width: 96vw; 
+  z-index: 10;
+  right: 0; 
+  transform-origin: top left;
 }
