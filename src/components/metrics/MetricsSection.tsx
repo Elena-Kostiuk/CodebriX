@@ -7,7 +7,7 @@ const MetricsSection=() =>{
   return (
     <section
       aria-label="Key Metrics"
-      className="free-area grid  grid-cols-2 md:grid-cols-4  mt-40  max-md:mt-20 max-md:mr-0"
+      className="free-area grid  grid-cols-2 md:grid-cols-4  mt-40  max-lg:mt-20 max-md:mt-16 max-sm:mt-10 max-md:mr-0"
       
     >
       {metrics.map((metric) => (

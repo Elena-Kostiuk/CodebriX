@@ -24,7 +24,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({
   };
 
   return (
-    <section className="relative free-area mt-40 max-md:mt-20">
+    <section className="relative free-area mt-40 max-lg:mt-20  max-sm:mt-10">
       <h2 className="inline-block">{title}</h2>
       <div
         className={`free-area flex ${

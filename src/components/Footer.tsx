@@ -11,7 +11,7 @@ const links = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative  z-[2] free-area mt-40 max-md:mt-20 flex flex-col justify-start items-center ">
+    <footer className="relative  z-[2] free-area mt-40 max-lg:mt-20  max-sm:mt-10 flex flex-col justify-start items-center ">
       <h2 className="self-start font-medium tracking-tighter mb-20 indent-60 max-md:mb-10  max-lg:indent-0 max-md:max-w-full  tracking-tightest max-sm:mb-4">
         Made by IT consultants for IT consultants
       </h2>
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
             loading="lazy"
             src="/images/logoPin.svg"
             alt=""
-            className="object-contain shrink-0 self-stretch ml-2 w-5 aspect-square max-md:w-2 max-md:aspect-square"
+            className="object-contain shrink-0 self-stretch ml-2 w-5 aspect-square max-lg:w-3 max-md:w-2 max-md:aspect-square"
           />
         </div>
       </div>

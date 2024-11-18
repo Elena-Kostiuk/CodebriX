@@ -16,7 +16,7 @@ export function IntegrationItem({
         loading="lazy"
         src={icon}
         alt={`${name} icon`}
-        className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square max-md:w-6 max-md:aspect-square max-sm:w-4 max-sm:aspect-square"
+        className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square max-lg:w-6  max-md:aspect-square max-sm:w-4 max-sm:aspect-square"
       />
       <p className="self-stretch my-auto">{name}</p>
     </div>

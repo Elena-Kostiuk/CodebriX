@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Screen from "../Screen";
 import featuresData from "../../data/features.json";
@@ -11,6 +11,25 @@ const AnimatedScreenBlock: React.FC = () => {
     threshold: 0.6,
   });
   const [expandedIndex, setExpandedIndex] = useState<number>(-1);
+  const [offset, setOffset] = useState(165); 
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1280) {
+        setOffset(180); 
+      } else if (window.innerWidth < 1536) {
+        setOffset(240); 
+      } else {
+        setOffset(165); 
+      }
+    };
+
+  
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleExpand = (index: number) => {
     setExpandedIndex((prev) => (prev === index ? -1 : index));
@@ -26,7 +45,7 @@ const AnimatedScreenBlock: React.FC = () => {
               expandedIndex === index ? "expanded" : ""
             }`}
             style={{
-              top: `${index * 165}px`,
+              top: `${index * offset}px`,
               animationDelay: `${index * 7}s`,
             }}
             onClick={() => handleExpand(index)}

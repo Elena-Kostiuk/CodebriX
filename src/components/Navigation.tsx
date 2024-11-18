@@ -37,7 +37,7 @@ const Navigation: React.FC = () => {
             isMenuOpen ? "border border-black" : ""
           }`}
         >
-          <p className="text-[14px] uppercase pr-2 font-medium ">
+          <p className="text-[14px] flex items-center uppercase pr-2 font-medium leading-none py-1 ">
             {isMenuOpen ? "close" : "menu"}
           </p>
 
@@ -59,9 +59,12 @@ const Navigation: React.FC = () => {
                   className="flex gap-2 justify-center items-center self-stretch"
                 >
                   <span>{item.label}</span>
-                  <span className="text-[1.3em] leading-[1.3em] max-md:text-[1.2em] max-md:leading-[1.1em]">
-                    {openDropdown === index ? "▲" : "▼"}
-                  </span>
+                  <img
+                    loading="lazy"      
+                    src={openDropdown === index ?  "/images/dropup.png" : "/images/dropdown.png"}
+                    alt="dropdown button"
+                    className="max-lg:w-[11px] max-md:w-[10px]"
+                    />
                 </div>
               ) : (
                 <a href={item.href}>{item.label}</a>
@@ -89,7 +92,7 @@ const Navigation: React.FC = () => {
       {isMenuOpen && (
         <div className="menu">
           <div className="menuContent">
-            <ul className="flex flex-col items-center gap-4 text-[32px] font-medium mt-[120px] ">
+            <ul className="flex flex-col items-center gap-4 text-[30px] font-medium mt-[120px] ">
               {navigationItems.map((item, index) => (
                 <li
                   key={index}
@@ -101,7 +104,12 @@ const Navigation: React.FC = () => {
                       className="flex gap-2 justify-start items-center self-stretch my-auto"
                     >
                       <a>{item.label}</a>
-                      <span>{openDropdown === index ? "▲" : "▼"}</span>
+                      <img
+                    loading="lazy"      
+                    src={openDropdown === index ?  "/images/dropup.png" : "/images/dropdown.png"}
+                    alt="dropdown button"
+                    className="w-[20px]"
+                    />
                     </div>
                   ) : (
                     <a href={item.href}>{item.label}</a>

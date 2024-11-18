@@ -41,7 +41,7 @@ const AnimatedCard: React.FC = () => {
   return (
     <div
       ref={ref}
-      className=" flex flex-col pr-4 pl-3  w-[49%] min-h-[1000px] max-md:w-full"
+      className=" flex flex-col pr-4 pl-3  w-[49%] min-h-[1000px] max-xl:min-h-0 max-md:w-full"
     >
       <div className="progress-bar w-[102%] h-[1px] mt-5 bg-gray-300 relative mb-2">
         <div

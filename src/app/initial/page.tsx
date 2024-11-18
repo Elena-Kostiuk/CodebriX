@@ -21,16 +21,17 @@ const InitialPage: React.FC = () => {
     <MouseTracker>
       <HeroSection />
 
-      <section className="relative z-[2] free-area mt-40 max-md:mt-20">
-        <h2 className="free-area font-medium flex flex-start flex-wrap tracking-tighter indent-60 mr-[240px] max-lg:indent-52 max-md:indent-0 max-md:max-w-full tracking-tightest max-lg:mr-0">
+      <section className="relative z-[2] free-area mt-40  max-lg:mt-20  max-sm:mt-10">
+        <h2 className="free-area font-medium flex flex-start flex-wrap tracking-tighter indent-60 mr-[240px] max-xl:indent-48 max-lg:indent-40 max-sm:indent-0 max-md:max-w-full tracking-tightest max-2xl:mr-0">
           {" "}
           DevEx: Local first platform to make everything work fast
         </h2>
-        <p className="label-text absolute top-[40px] left-[8px] text-[14px]  gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-lg:top-[8px]  max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
+        <p className="label-text absolute top-[40px]  text-[14px]  gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
           #Development process
         </p>
         <Dashboard data={developmentProcess1} />
       </section>
+      
       <ContentPanel
         title="Local first platform to make everything work fast"
         data={ides}
@@ -63,8 +64,8 @@ const InitialPage: React.FC = () => {
 
       <SliderWrapper />
 
-      <section className="relative free-area mt-36 max-lg:mt-20">
-        <h2 className="free-area font-medium tracking-tighter  max-md:max-w-full  tracking-tightest indent-60 max-lg:indent-52  max-md:indent-0">
+      <section className="relative free-area mt-36 max-lg:mt-20 max-sm:mt-16">
+        <h2 className="free-area font-medium tracking-tighter  max-md:max-w-full  tracking-tightest indent-60 max-xl:indent-48 max-lg:indent-40 max-sm:indent-0">
           Low-code
           <img
             loading="lazy"
@@ -76,7 +77,7 @@ const InitialPage: React.FC = () => {
             / Flexibility / No Limits
           </span>
         </h2>
-        <p className="label-text  absolute top-[40px] left-[8px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-lg:top-[8px] max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
+        <p className="label-text  absolute top-[40px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
           #Development process
         </p>
         <Dashboard data={developmentProcess2} />
@@ -84,11 +85,11 @@ const InitialPage: React.FC = () => {
 
       <Integrations />
 
-      <section className="relative free-area mt-40 max-md:mt-20">
-        <h2 className="free-area font-medium tracking-tighter indent-60 max-lg:indent-52  max-md:indent-0 max-md:max-w-full  tracking-tightest">
+      <section className="relative free-area mt-40 max-lg:mt-20 max-sm:mt-10">
+        <h2 className="free-area font-medium tracking-tighter indent-60 max-xl:indent-48 max-lg:indent-40 max-sm:indent-0  tracking-tightest">
           Let us help you close the deal fast
         </h2>
-        <p className="label-text  absolute top-[40px] left-[8px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-lg:top-[8px] max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
+        <p className="label-text  absolute top-[40px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
           #Client relations
         </p>
         <Dashboard data={clientRelations} />
@@ -97,6 +98,7 @@ const InitialPage: React.FC = () => {
       <Features />
 
       <MetricsSection />
+
       <ContentPanel
         title="Built by the team that shipped for"
         data={clients}
@@ -115,11 +117,11 @@ const InitialPage: React.FC = () => {
         </div>
       </ContentPanel>
 
-      <section className="relative free-area mt-40 max-md:mt-20 flex flex-col items-start">
-        <h2 className="inline-block font-medium tracking-tighter indent-60 max-lg:indent-52 max-md:indent-0  max-md:max-w-full  tracking-tightest">
+      <section className="relative free-area flex flex-col items-start mt-40 max-lg:mt-20 max-sm:mt-10 ">
+        <h2 className="free-area font-medium tracking-tighter indent-60 max-xl:indent-48 max-lg:indent-40 max-sm:indent-0 max-md:max-w-full  tracking-tightest">
           Create Interactive Customer-facing Apps
         </h2>
-        <p className="label-text absolute top-[40px] left-[8px]  gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-lg:top-[8px]  max-md:relative max-md:mt-4 max-md:top-auto  max-md:left-auto max-md:inline-block">
+        <p className="label-text absolute top-[40px]  gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
           #Use Cases
         </p>
         <CustomerApps />

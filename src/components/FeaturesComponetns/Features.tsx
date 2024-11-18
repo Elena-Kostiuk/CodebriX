@@ -54,11 +54,11 @@ const Features: React.FC = () => {
   }, []);
 
   return (
-    <section className="free-area fix-area relative min-h-[100vh] mt-40 max-md:mt-20">
-      <h2 className="inline-block font-medium tracking-tighter indent-60 max-lg:indent-52 max-md:indent-0 max-md:max-w-full tracking-tightest">
+    <section className="free-area fix-area relative min-h-[120vh] mt-40 max-lg:mt-20 max-sm:mt-10">
+      <h2 className="free-area font-medium tracking-tighter indent-60  max-xl:indent-48 max-lg:indent-40 max-sm:indent-0 max-md:max-w-full tracking-tightest">
         Everything your clients need to succeed
       </h2>
-      <p className="label-text absolute top-[40px] left-[8px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-lg:top-[8px] max-md:relative max-md:mt-4 max-md:top-auto max-md:left-auto max-md:inline-block">
+      <p className="label-text absolute top-[40px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
         #Features
       </p>
       <FeaturesBlocksWrapper />

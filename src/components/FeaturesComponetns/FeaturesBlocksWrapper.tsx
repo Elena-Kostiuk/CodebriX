@@ -17,8 +17,8 @@ const FeaturesBlocksWrapper = () => {
     };
 
     if (typeof window !== "undefined") {
-      handleResize(); // Визначення ширини на початковому рендері
-      setIsInitialized(true); // Позначаємо, що початковий рендер завершено
+      handleResize(); 
+      setIsInitialized(true); 
       window.addEventListener("resize", handleResize);
     }
 
@@ -29,7 +29,6 @@ const FeaturesBlocksWrapper = () => {
     };
   }, []);
 
-  // Якщо ширина ще не ініціалізована, нічого не рендеримо
   if (!isInitialized) {
     return null;
   }

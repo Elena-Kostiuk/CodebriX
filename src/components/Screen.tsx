@@ -30,7 +30,7 @@ const Screen: React.FC<ScreenProps> = ({
         />
 
         <div
-          className="shrink-0 self-stretch my-auto max-w-full h-px border border-solid bg-neutral-900 border-neutral-900 flex-grow transition-all max-md:flex-grow-0 max-md:opacity-0 max-md:w-0"
+          className="shrink-0 self-stretch my-auto max-w-full min-w-6 h-px border border-solid bg-neutral-900 border-neutral-900 flex-grow transition-all"
           aria-hidden="true"
         />
 
@@ -39,7 +39,7 @@ const Screen: React.FC<ScreenProps> = ({
         </h4>
 
         <div
-          className="shrink-0 self-stretch my-auto max-w-full h-px border border-solid bg-neutral-900 border-neutral-900 flex-grow transition-all max-md:flex-grow-0 max-md:opacity-0 max-md:w-0"
+          className="shrink-0 self-stretch my-auto max-w-full min-w-6 h-px border border-solid bg-neutral-900 border-neutral-900 flex-grow transition-all"
           aria-hidden="true"
         />
          <img
