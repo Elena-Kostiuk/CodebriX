@@ -19,7 +19,7 @@ const Screen: React.FC<ScreenProps> = ({
 
   return (
     <section
-      className={`flex overflow-hidden flex-col self-end ${width} px-3 py-2.5 bg-white border border-solid mt-5 border-neutral-900 max-md:px-2 max-md:py-1 max-lg:w-full  duration-300 ease-in-out`}
+      className={`flex overflow-hidden flex-col self-end ${width} px-3 py-2.5 cursor-pointer bg-white border border-solid mt-5 border-neutral-900 max-md:px-2 max-md:py-1 max-lg:w-full  duration-300 ease-in-out`}
     >
       <div className="flex gap-4 justify-between items-center w-full mb-2 max-md:gap-2 max-md:mb-1 max-md:max-w-full">
         <img
@@ -30,7 +30,7 @@ const Screen: React.FC<ScreenProps> = ({
         />
 
         <div
-          className="shrink-0 self-stretch my-auto max-w-full min-w-6 h-px border border-solid bg-neutral-900 border-neutral-900 flex-grow transition-all"
+          className="shrink-0 self-stretch my-auto max-w-full min-w-5 h-px border border-solid bg-neutral-900 border-neutral-900 flex-grow transition-all"
           aria-hidden="true"
         />
 
@@ -39,7 +39,7 @@ const Screen: React.FC<ScreenProps> = ({
         </h4>
 
         <div
-          className="shrink-0 self-stretch my-auto max-w-full min-w-6 h-px border border-solid bg-neutral-900 border-neutral-900 flex-grow transition-all"
+          className="shrink-0 self-stretch my-auto max-w-full min-w-5 h-px border border-solid bg-neutral-900 border-neutral-900 flex-grow transition-all"
           aria-hidden="true"
         />
          <img

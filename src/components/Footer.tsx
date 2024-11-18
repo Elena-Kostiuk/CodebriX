@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
             loading="lazy"
             src="/images/logoPin.svg"
             alt=""
-            className="object-contain shrink-0 self-stretch ml-2 w-5 aspect-square max-lg:w-3 max-md:w-2 max-md:aspect-square"
+            className="object-contain shrink-0 self-stretch ml-2 w-5 aspect-square max-xl:w-4 max-lg:w-3 max-md:w-2 max-md:aspect-square"
           />
         </div>
       </div>

@@ -20,13 +20,13 @@ const MetricCard = ({
   description,
   subtitle,
 }: MetricCardProps) => {
-  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.7 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.7 });
 
   return (
     <article
       ref={ref}
       className="free-area flex flex-col h-full self-start pt-1 border-l-2 border-dotted border-gray-300 
-        [&:nth-child(1)]:border-l-0 pl-[15%] [&:nth-child(1)]:pl-2 max-md:odd:border-l-0 max-md:odd:pl-0 max-md:mt-4 max-md:h-auto"
+        [&:nth-child(1)]:border-l-0 pl-[15%] max-md:odd:border-l-0 max-md:odd:pl-2 max-md:mt-4 max-md:h-auto"
     >
       <div className="flex items-end self-start font-medium font-robert-trial whitespace-nowrap">
         {prefixText && (
