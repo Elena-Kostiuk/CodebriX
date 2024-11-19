@@ -19,6 +19,7 @@ const VideoScreenWrapper: React.FC = () => {
   const { scrollY } = useScroll();
   const [showVideo, setShowVideo] = useState(false);
   const [isClient, setIsClient] = useState(false);
+  const [videoOpacity, setVideoOpacity] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,6 +41,7 @@ const VideoScreenWrapper: React.FC = () => {
 
   const handlePosterClick = () => {
     setShowVideo(true);
+    setTimeout(() => setVideoOpacity(1), 50);
   };
 
   const widthTransform = useTransform(scrollY, [0, 700], ["50%", "100%"]);
@@ -77,7 +79,10 @@ const VideoScreenWrapper: React.FC = () => {
             onClick={handlePosterClick}
             data-tooltip-id="playTooltip"
             data-tooltip-content="Click to play"
-            className="container-tooltip object-contain w-[67.8%] h-[70%] overflow-hidden bg-transparent cursor-pointer"
+            className="container-tooltip object-contain w-[67.9%] h-[69.3%] bg-cover bg-center  overflow-hidden bg-transparent cursor-pointer"
+            style={{
+              backgroundImage: "url('/images/preview1.png')",
+            }}
           >
             {!showVideo && (
               <ReactTooltip
@@ -87,22 +92,23 @@ const VideoScreenWrapper: React.FC = () => {
                 className="custom-tooltip"
               />
             )}
-            <img
-              src="/images/preview1.png"
-              alt="Video Preview"
-              className={`object-contain w-full max-md:w-full max-md:h-auto z-10 ${
-                showVideo ? "hidden" : ""
-              }`}
-            />
-            {showVideo && isClient && (
-                <ReactPlayer
-                  url="/video/CodebriX.mp4"
-                  playing
-                  muted
-                  controls
-                  width="100%"
-                  height="100%"
-                />
+            {isClient && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: videoOpacity }}
+                transition={{ duration: 0.8, ease: "easeIn" }}
+              >
+                {showVideo && (
+                  <ReactPlayer
+                    url="/video/CodebriX.mp4"
+                    playing
+                    muted
+                    controls
+                    width="100%"
+                    height="100%"
+                  />
+                )}
+              </motion.div>
             )}
           </div>
         </div>

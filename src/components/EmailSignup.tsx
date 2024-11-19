@@ -37,7 +37,7 @@ const EmailSignup: React.FC<EmailSignupProps> = ({ popUp = false }) => {
         </div>
         <button
           type="submit"
-          className={`font-medium gap-2.5 self-stretch px-4 py-5  tracking-wide text-white uppercase rounded-xl  bg-neutral-900  text-[100%] max-2xl:text-[16px] max-2xl:py-3 max-lg:text-[12px] max-lg:py-[8px] max-sm:w-5  max-md:text-[16px] max-md:px-4  max-md:h-[49px] max-md:py-2 max-md:tracking-normal max-sm:text-[12.65] max-sm:w-full max-sm:ml-0 max-sm:mt-5  ${
+          className={`font-medium gap-2.5 self-stretch whitespace-nowrap px-4 py-5  tracking-wide text-white uppercase rounded-xl  bg-neutral-900  text-[100%] max-2xl:text-[16px] max-2xl:py-3 max-lg:text-[12px] max-lg:py-[8px] max-sm:w-5  max-md:text-[16px] max-md:px-4  max-md:h-[49px] max-md:py-2 max-md:tracking-normal max-sm:text-[12.65] max-sm:w-full max-sm:ml-0 max-sm:mt-5  ${
             popUp ? "ml-0 mt-5" : "ml-3"
           }`}
         >
