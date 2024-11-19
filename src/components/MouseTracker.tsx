@@ -2,7 +2,9 @@
 import React, { useState, useEffect } from "react";
 import SlipAnimationElement from "./SlipAnimationElement";
 
-const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const MouseTracker: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [showAnimated, setShowAnimated] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isDesktop, setIsDesktop] = useState(false);
@@ -37,19 +39,17 @@ const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 
     const startTimeout = () => {
       timeout = setTimeout(() => {
-    
         const elementUnderMouse = document.elementFromPoint(
           mousePosition.x,
           mousePosition.y
         );
 
-       
         if (elementUnderMouse?.classList.contains("free-area")) {
           setShowAnimated(true);
         } else {
           setShowAnimated(false);
         }
-      }, 2000); 
+      }, 2000);
     };
 
     const resetTimeout = () => {
@@ -71,24 +71,23 @@ const MouseTracker: React.FC<{ children: React.ReactNode }> = ({ children }) => 
   }, [isDesktop, mousePosition]);
 
   const getMousePositionWithOffset = () => {
-  
     const rect = document.documentElement.getBoundingClientRect();
     return {
-      x: mousePosition.x - rect.left, 
-      y: mousePosition.y - rect.top,  
+      x: mousePosition.x - rect.left,
+      y: mousePosition.y - rect.top,
     };
   };
 
   return (
-    <div className="free-area relative px-5 max-sm:px-3">
+    <div className="free-area relative px-5 max-w:[100vw] overflow-hidden max-sm:px-3">
       {isDesktop && showAnimated && (
         <div
           style={{
             position: "absolute",
-            top: getMousePositionWithOffset().y,  
-            left: getMousePositionWithOffset().x, 
-            transform: "translate(-50%, -50%)",  
-            zIndex: -1,  
+            top: getMousePositionWithOffset().y,
+            left: getMousePositionWithOffset().x,
+            transform: "translate(-50%, -50%)",
+            zIndex: -1,
           }}
           className={`transition-opacity duration-1000 ${
             showAnimated ? "opacity-100" : "opacity-0"

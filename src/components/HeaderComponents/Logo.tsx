@@ -3,7 +3,7 @@ import React from "react";
 
 const Logo: React.FC = () => {
   return (
-    <div className="free-area flex relative  grow shrink gap-2 items-center self-stretch  w-2/5 max-sm:pb-1">
+    <div className="free-area flex relative  grow  gap-2   w-2/5 ">
       <img
         loading="lazy"
         src="/images/logoPin.svg"
@@ -14,7 +14,7 @@ const Logo: React.FC = () => {
         loading="lazy"
         src="/images/logoTag.svg"
         alt="Company logo"
-        className="relative z-[3] object-contain shrink-0 self-stretch  aspect-[5.49] w-[110px] max-md:w-[80px]"
+        className="relative z-[3] object-contain  w-[110px] max-md:w-[80px]"
       />
     </div>
   );

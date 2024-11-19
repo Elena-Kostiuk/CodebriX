@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import EmailSignup from "./EmailSignup";
+import EmailSignup from "../EmailSignup";
 
 const SignInButton: React.FC = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -8,10 +8,10 @@ const SignInButton: React.FC = () => {
   const toggleForm = () => setIsFormOpen(!isFormOpen);
 
   return (
-    <div className="fixed right-3 z-[4] top-5 flex flex-col items-end max-2xl:top-7  max-md:top-6 max-sm:top-7">
+    <div className="fixed right-5 z-[4] h-[48px] flex flex-col items-end">
       <button
         onClick={toggleForm}
-        className="btn   gap-2.5  px-5 py-3 tracking-wide text-white font-medium tracking-wide text-white uppercase rounded-lg bg-neutral-900  max-sm:ml-2 max-sm:px-4 max-sm:py-2  "
+        className="btn gap-2.5 px-5 py-3 my-auto text-white font-medium tracking-wide uppercase rounded-lg bg-neutral-900  max-sm:ml-2 max-sm:px-4 max-sm:py-2  "
       >
         Sign in
       </button>

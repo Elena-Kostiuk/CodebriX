@@ -1,20 +1,20 @@
 import React from "react";
 import HeroSection from "@/components/HeroSection";
 import Dashboard from "@/components/InfoCardComponents/Dashboard";
-import developmentProcess1 from "../../data/developmentProcess1.json";
-import developmentProcess2 from "../../data/developmentProcess2.json";
-import clientRelations from "../../data/clientRelations.json";
 import SliderWrapper from "@/components/SliderComponents/SliderWrapper";
 import Integrations from "@/components/integrations/Integrations";
-import "../styles/screen.css";
-import ides from "../../data/ides.json";
-import clients from "../../data/clients.json";
 import MetricsSection from "@/components/metrics/MetricsSection";
 import CustomerApps from "@/components/CustomerApps/CustomerApps";
 import Footer from "@/components/Footer";
 import Features from "@/components/FeaturesComponetns/Features";
 import MouseTracker from "@/components/MouseTracker";
 import ContentPanel from "@/components/ContentPanel";
+import developmentProcess1 from "../../data/developmentProcess1.json";
+import developmentProcess2 from "../../data/developmentProcess2.json";
+import clientRelations from "../../data/clientRelations.json";
+import ides from "../../data/ides.json";
+import clients from "../../data/clients.json";
+import "../styles/screen.css";
 
 const InitialPage: React.FC = () => {
   return (
@@ -26,18 +26,18 @@ const InitialPage: React.FC = () => {
           {" "}
           DevEx: Local first platform to make everything work fast
         </h2>
-        <p className="label-text absolute top-[40px]  text-[14px]  gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
+        <p className="label-text absolute top-[40px] text-[14px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
           #Development process
         </p>
         <Dashboard data={developmentProcess1} />
       </section>
-      
+
       <ContentPanel
         title="Local first platform to make everything work fast"
         data={ides}
         reverse={false}
       >
-        <div className="list-container object-contain bg-black  w-full  p-[20px] aspect-[1.94] text-[24px] leading-[32px] max-md:text-[16px] max-md:leading-[24px] max-sm:text-[12px] max-sm:leading-[18px]  max-md:h-auto max-md:p-[16px]">
+        <div className="list-container object-contain bg-black  w-full p-[20px] aspect-[1.94] text-[24px] leading-[32px] max-md:text-[16px] max-md:leading-[24px] max-sm:text-[12px] max-sm:leading-[18px]  max-md:h-auto max-md:p-[16px]">
           <ol className="list-decimal text-white">
             <li>
               &#123;&#123;currentRow<span className="yellow">.</span>
@@ -65,7 +65,7 @@ const InitialPage: React.FC = () => {
       <SliderWrapper />
 
       <section className="relative free-area mt-36 max-lg:mt-20 max-sm:mt-16">
-        <h2 className="free-area font-medium tracking-tighter  max-md:max-w-full  tracking-tightest indent-60 max-xl:indent-48 max-lg:indent-40 max-sm:indent-0">
+        <h2 className="free-area font-medium tracking-tighter  max-md:max-w-full indent-60 max-xl:indent-48 max-lg:indent-40 max-sm:indent-0">
           Low-code
           <img
             loading="lazy"
@@ -77,7 +77,7 @@ const InitialPage: React.FC = () => {
             / Flexibility / No Limits
           </span>
         </h2>
-        <p className="label-text  absolute top-[40px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
+        <p className="label-text absolute top-[40px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
           #Development process
         </p>
         <Dashboard data={developmentProcess2} />
@@ -89,7 +89,7 @@ const InitialPage: React.FC = () => {
         <h2 className="free-area font-medium tracking-tighter indent-60 max-xl:indent-48 max-lg:indent-40 max-sm:indent-0  tracking-tightest">
           Let us help you close the deal fast
         </h2>
-        <p className="label-text  absolute top-[40px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
+        <p className="label-text absolute top-[40px] gap-2.5 px-2 py-1 rounded-2xl border border-dashed border-neutral-900 max-xl:top-[18px] max-xl:top-[15px] max-lg:top-[12px] max-md:top-[6px]  max-sm:mt-4 max-sm:relative max-sm:top-auto  max-sm:left-auto max-sm:inline-block">
           #Client relations
         </p>
         <Dashboard data={clientRelations} />
