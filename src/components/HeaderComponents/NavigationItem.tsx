@@ -6,6 +6,7 @@ interface NavigationItemProps {
   hasDropdown?: string[];
   isOpen: boolean;
   toggleDropdown: () => void;
+  isMobile: boolean;
 }
 
 const NavigationItem: React.FC<NavigationItemProps> = ({
@@ -14,32 +15,33 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
   hasDropdown,
   isOpen,
   toggleDropdown,
+  isMobile
 }) => {
   return (
-    <li className="relative gap-2 px-6 my-auto text-center rounded-3xl cursor-pointer max-lg:px-3 max-md:px-2 flex-shrink-0">
+    <li className={`relative gap-2 self-stretch px-6 ${isMobile ? "pb-8" : "py-2 my-auto text-center rounded-3xl cursor-pointer min-h-[40px] max-lg:px-3 max-md:px-2 flex-shrink-0"}`}>
       {hasDropdown ? (
         <div
           onClick={toggleDropdown}
-          className="flex gap-2 justify-center items-center self-stretch"
+          className={`flex gap-2  items-center self-stretch ${isMobile ? "justify-start" : "justify-center"}`}
         >
           <span>{label}</span>
           <img
             loading="lazy"
             src={isOpen ? "/images/dropup.png" : "/images/dropdown.png"}
             alt="dropdown button"
-            className="max-lg:w-[11px] max-md:w-[10px]"
+            className={`${isMobile ? "w-[20px]": "max-lg:w-[11px] max-md:w-[10px]"}`}
           />
         </div>
       ) : (
         <a href={href}>{label}</a>
       )}
       {hasDropdown && isOpen && (
-        <div className="absolute top-full left-[-10px] mt-2 rounded-lg bg-white text-neutral-900 w-[280%] uppercase rounded-[12px] shadow-lg">
-          <ul className="flex flex-col mx-7 my-3 border-l-2 border-dotted border-gray-300">
+        <div className={`text-neutral-900 ${isMobile ? "w-[100%]" :  "absolute top-full left-[-10px] mt-2 rounded-lg bg-white w-[280%] uppercase rounded-[12px] shadow-lg"}`}>
+          <ul className={`flex flex-col mx-7 ${isMobile ? "mt-8" : "my-3 border-l-2 border-dotted border-gray-300"} `}>
             {hasDropdown.map((subItem, subIndex) => (
               <li
                 key={subIndex}
-                className="px-4 py-[6px] text-left hover:text-[rgba(196,196,196,1)] cursor-pointer rounded-lg"
+                className={`px-4  text-left  ${isMobile ? "py-[16px] text-[28px] font-robert-trial active:text-[rgba(196,196,196,1)]" : "py-[6px] hover:text-[rgba(196,196,196,1)] cursor-pointer rounded-lg"}`}
               >
                 {subItem}
               </li>
