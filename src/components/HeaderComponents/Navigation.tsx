@@ -31,11 +31,10 @@ const Navigation: React.FC = () => {
     setOpenDropdown(openDropdown === index ? null : index);
   };
 
-  // Закриваємо dropdown при кліку поза меню
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
       if (
-        menuRef.current && 
+        menuRef.current &&
         !menuRef.current.contains(event.target as Node)
       ) {
         setOpenDropdown(null);
@@ -51,10 +50,15 @@ const Navigation: React.FC = () => {
     };
   }, []);
 
+  const handleCloseDropdown = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (event.target === event.currentTarget && openDropdown !== null) {
+      setOpenDropdown(null);
+    }
+  };
+
   return (
-    <>
-      <nav
-        ref={menuRef}
+    <nav ref={menuRef}>
+      <div
         className="z-[6] box-border fixed right-1/2 transform translate-x-1/2  h-[48px] max-sm:mt-[10px]"
       >
         <div
@@ -86,27 +90,30 @@ const Navigation: React.FC = () => {
             />
           ))}
         </ul>
-      </nav>
+      </div>
 
       {/* Mobile */}
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-[100vw] h-[200vh] z-[5] flex items-start justify-start backdrop-blur-[10px] bg-white bg-opacity-20">
-            <ul className="flex flex-col items-center gap-4 text-[30px] font-medium mt-[120px] ">
-              {navigationItems.map((item, index) => (
-                <NavigationItem
-                  key={index}
-                  label={item.label}
-                  href={item.href}
-                  hasDropdown={item.hasDropdown}
-                  isOpen={openDropdown === index}
-                  toggleDropdown={() => toggleDropdown(index)}
-                  isMobile={true}
-                />
-              ))}
-            </ul>
+        <div
+          onClick={handleCloseDropdown}
+          className="fixed top-0 left-0 w-[100vw] h-[200vh] z-[5] flex items-start justify-start backdrop-blur-[10px] bg-white bg-opacity-20"
+        >
+          <ul className="flex flex-col items-center gap-4 text-[30px] font-medium mt-[120px] ">
+            {navigationItems.map((item, index) => (
+              <NavigationItem
+                key={index}
+                label={item.label}
+                href={item.href}
+                hasDropdown={item.hasDropdown}
+                isOpen={openDropdown === index}
+                toggleDropdown={() => toggleDropdown(index)}
+                isMobile={true}
+              />
+            ))}
+          </ul>
         </div>
       )}
-    </>
+    </nav>
   );
 };
 
