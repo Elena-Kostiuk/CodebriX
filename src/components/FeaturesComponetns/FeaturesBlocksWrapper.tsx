@@ -6,7 +6,6 @@ import AnimatedCard from "./AnimatedCardsBlock";
 import featuresData from "../../data/features.json";
 import Screen from "../Screen";
 import Card from "../InfoCardComponents/Card";
-import FullScreenWrapper from "../FullScreenWrapper";
 
 const FeaturesBlocksWrapper = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -53,7 +52,6 @@ const FeaturesBlocksWrapper = () => {
                 descriptionText={item.text}
                 className="flex flex-col w-full mb-5 rounded-lg max-md:min-h-0"
               />
-              <FullScreenWrapper>
               <Screen title={item.header} width="w-full">
                 <div
                   className="relative flex items-center justify-center bg-cover bg-center border-x border-solid border-neutral-900 w-full aspect-[2/1.1] max-lg:h-auto max-lg:h-auto"
@@ -67,7 +65,6 @@ const FeaturesBlocksWrapper = () => {
                   />
                 </div>
               </Screen>
-              </FullScreenWrapper>
             </div>
           ))}
         </div>

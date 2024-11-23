@@ -39,7 +39,8 @@ const VideoScreenWrapper: React.FC = () => {
     };
   }, []);
 
-  const handlePosterClick = () => {
+  const handlePosterClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
     setShowVideo(true);
     setTimeout(() => setVideoOpacity(1), 50);
   };
@@ -50,7 +51,8 @@ const VideoScreenWrapper: React.FC = () => {
     if (isAnimatingWidth) {
       const currentWidth = widthTransform.get();
       if (currentWidth === "100%") {
-        setIsAnimatingWidth(false);
+        setIsAnimatingWidth(false);}
+      if (isDesktop && currentWidth === "100%") { 
         setIsExpanded(true);
       } else {
         setIsExpanded(false);
@@ -67,7 +69,7 @@ const VideoScreenWrapper: React.FC = () => {
   return (
     <motion.div
       key={isExpanded ? "expanded" : "collapsed"}
-      className="video-screen-wrapper flex ml-auto mt-4 max-md:ml-0 max-md:w-full"
+      className="video-screen-wrapper relative flex ml-auto mt-4 max-md:ml-0 max-md:w-full"
       style={{ width: dynamicWidth }}
     >
       <Screen title="Product tour" width="w-full" isExpanded={isExpanded}>
