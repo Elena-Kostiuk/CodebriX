@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface NavigationItemProps {
   label: string;
@@ -33,7 +34,9 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
           />
         </div>
       ) : (
-        <a href={href}>{label}</a>
+        <Link href={href}>
+          {label}
+        </Link>
       )}
       {hasDropdown && isOpen && (
         <div className={`text-neutral-900 ${isMobile ? "w-[100%]" :  "absolute top-full left-[-10px] mt-2 rounded-lg bg-white w-[280%] uppercase rounded-[12px] shadow-lg"}`}>

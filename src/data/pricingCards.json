@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Spreadsheet Gurus & Friends",
+    "subtitle": "/ For spreadsheet gurus who want to productive their spreadsheets",
+    "price": 60,
+    "additionalText": "Features:",
+    "features": [
+      {
+        "description": "2 user roles"
+      },
+      {
+        "description": "3 apps (Git-based or Web IDE)"
+      },
+      {
+        "description": "500 workflow runs / mo"
+      },
+      {
+        "description": "20,000 embed PostgreSQL records"
+      },
+      {
+        "description": "7 external API/DB connectors"
+      },
+      {
+        "description": "5 hours of individual developer support per month"
+      }
+    ],
+    "ctaText": "Try now",
+    "hoverStyle": "hover-blue"
+  },
+  {
+    "title": "Data Growth",
+    "subtitle": "/ For individuals and small teams that leverage a lot of data",
+    "price": 120,
+    "additionalText": "Everything in Spreadsheet Gurus & Friends plus:",
+    "features": [
+      {
+        "description": "Unlimited users"
+      },
+      {
+        "description": "7 apps (Git-based or Web IDE)"
+      },
+      {
+        "description": "5,000 workflow runs / mo"
+      },
+      {
+        "description": "120,000 embed PostgreSQL records"
+      },
+      {
+        "description": "20 external API/DB connectors"
+      },
+      {
+        "description": "5 rich dashboards with 1 hour/data freshness"
+      }
+    ],
+    "ctaText": "Try now",
+    "hoverStyle": "hover-green"
+  },
+  {
+    "title": "Team Growth",
+    "subtitle": "/ For bigger teams that need granular permissions and multiple roles",
+    "price": 800,
+    "additionalText": "Everything in Data Growth plus:",
+    "features": [
+      {
+        "description": "5 user roles"
+      },
+      {
+        "description": "20 apps (Git-based or Web IDE)"
+      },
+      {
+        "description": "250,000 workflow runs / mo"
+      },
+      {
+        "description": "2,000,000 embed PostgreSQL records"
+      },
+      {
+        "description": "70 external API/DB connectors"
+      },
+      {
+        "description": "15 hours of individual developer support per month"
+      }
+    ],
+    "ctaText": "Contact us",
+    "hoverStyle": "hover-orange"
+  }
+]

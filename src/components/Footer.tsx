@@ -3,19 +3,23 @@ import EmailSignup from "./EmailSignup";
 import LogoSVG from "./LogoSVG";
 import "../app/styles/colorHover.css";
 
+interface FooterProps {
+  isMainPage?: boolean;
+}
+
 const links = [
   { name: "YouTube", style: "hover-orange" },
   { name: "Twitter", style: "hover-green" },
   { name: "Discord", style: "hover-blue" },
 ];
 
-const Footer: React.FC = () => {
+const Footer: React.FC<FooterProps> = ({ isMainPage="true" }) => {
   return (
     <footer className="relative  z-[2] free-area mt-40 max-lg:mt-20  max-sm:mt-10 flex flex-col justify-start items-center ">
-      <h2 className="self-start font-medium tracking-tighter mb-20 indent-60 max-md:mb-10  max-lg:indent-0 max-md:max-w-full  tracking-tightest max-sm:mb-4">
+      {isMainPage && <h2 className="self-start font-medium tracking-tighter mb-20 indent-60 max-md:mb-10  max-lg:indent-0 max-md:max-w-full  tracking-tightest max-sm:mb-4">
         Made by IT consultants for IT consultants
-      </h2>
-      <EmailSignup />
+      </h2>}
+      {isMainPage && <EmailSignup />}
       <LogoSVG />
       <div className="label-text free-area flex self-end justify-end items-center my-6 max-md:justify-start max-md:gap-3 max-sm:flex-col max-sm:my-1">
         <div className="flex gap-1">

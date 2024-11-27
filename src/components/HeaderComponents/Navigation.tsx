@@ -4,10 +4,10 @@ import "../../app/styles/navMenu.css";
 import NavigationItem from "./NavigationItem";
 
 const navigationItems = [
-  { label: "PRICING", href: "#" },
+  { label: "PRICING", href: "/pricing" },
   {
     label: "DOCS",
-    href: "#",
+    href: "/docs",
     hasDropdown: [
       "Build apps",
       "Quick start",
@@ -16,8 +16,8 @@ const navigationItems = [
       "Reference",
     ],
   },
-  { label: "RESOURCES", href: "#" },
-  { label: "ROADMAP", href: "#" },
+  { label: "RESOURCES", href: "/resources" },
+  { label: "ROADMAP", href: "/roadmap" },
 ];
 
 const Navigation: React.FC = () => {
