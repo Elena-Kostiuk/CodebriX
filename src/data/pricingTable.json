@@ -1,0 +1,91 @@
+{
+    "tables":
+[ 
+    {
+      "title": ["Data & Workflow runs", 
+      "Spreadsheet Gurus & Friends", 
+      "Data Growth", 
+      "Team Growth"],
+      "rows":[ [
+      "Database records", 
+      "10k rows\n 9€/ 3k additional records", 
+      "2 mln rows\n 15 €/ 100k records", 
+      "25 mln rows,\n 30 €/ 500k records"],
+      ["Workflow runs",
+       "500 runs included,\n 20 €/ additional 500 runs", 
+       "5,000 runs included\n 30€/ additional 1000 runs", 
+       "250,000 runs included\n 30 €/ additional 5k runs"],
+       ["Direct access to database\n – write arbitrary SQL queries", 
+       "img1", 
+       "img1", 
+       "img1"],
+       ["File storage", 
+       "5 GB included,\n 9 € / 1 GB additional", 
+       "15 GB included,\n 15 € / 10 GB additional", 
+       "50 GB included,\n 20 € / 20 GB additional"]
+]},
+    {
+      "title": ["Automation & Integrations","","",""],
+      "rows": [[
+      "Payment integration", 
+      "$20 / mo", 
+      "img1", 
+      "img1"],
+      ["External connections", 
+      "3", 
+      "10", 
+      "Unlimited"],
+      ["API calls", "1k API calls / day", "3k API calls / day","Unlimited"],
+      ["Data freshness","24h (30 runs)","1h (500 runs)",""],
+      ["Integrations","Emails, Slack, MsSQL, Postgres, Mongodb","",""]
+      ]
+    },
+    {
+      "title": ["Calculations and reporting","","",""],
+      "rows": [
+      ["Pivot tables with drilldown","img1","img1","img1" ],
+      ["PDF files generation","img1","img1","img1"],
+      ["Row level security for reports","img2","img1","img1"],
+      ["Import from Excel","img1","img1","img1"],
+      ["Rich dashboards","3 dashboards,\n 24 hour data freshness",
+      "5 dashboards,\n 1 hour data freshness",
+      "15 dashboards,\n 1 hour data freshness"]
+    ]},
+    {
+      "title": ["User Identity Management","","",""],
+      "rows": [["Number of builders ","1","1","2 + (+1 builder – 20 eur)"],
+      ["User roles","2","2","5"],
+      ["Login/SSO","Email based/Goolge SSO","Email based/Goolge SSO","LDAP/Custom Identity provider/SAML"],
+      ["User actions audit","24h fresh","30 days","Infinity"]
+    ]},
+    {
+      "title": ["Security","","",""],
+      "rows": [["Logs","24 log retention","img1","img1"],
+      ["MFA (OTP, Hardware keys)","OTP","Hardware keys","Hardware keys"],
+      ["IP blocking/Firewall","img2","img1","img1"],
+      ["Data recovery","img1","img1","img1"],
+      ["Backups","24h backup period","1h backup period","Point-in-time recovery"]
+    ]},
+    {
+      "title": ["Custom development and Support","","",""],
+      "rows": [["5 hours of developer's\n time / month","100 euro","100 euro","100 euro"],
+      ["App сonsultaion ","img2","img1","img1"],
+      ["Chat and Email Support","img1","img1","Priority"],
+      ["Customer Success Manager","img1","img1","img1"],
+      ["Migration from Retool/ Appsmith/Caspio","free for annual contract","",""]
+    ]},
+    {
+      "title": ["Enterprise Capabilities","","",""],
+      "rows": [["White label -- remove branding","img2","img1","img1"],
+      ["Custom domain","30 euro / mo","img1","img1"],
+      ["Custom branding","img2","img2","img1"],
+      ["White glove development (hourly rates apply)","img2","img2","img1"],
+      ["SOC2","img2","img2","img1"],
+      ["HIPAA","img2","img2","img1"],
+      ["Dedicated instance","img2","img2","img1"],
+      ["SLA","img2","img1","img1"],
+      ["Account Security Governance","img2","img1","img1"],
+      ["","btn TRY NOW","btn TRY NOW","btn CONTACT US"]
+    ]}
+    ]
+}

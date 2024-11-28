@@ -3,24 +3,28 @@ import React, { useState, useEffect, useRef } from "react";
 import "../../app/styles/navMenu.css";
 import NavigationItem from "./NavigationItem";
 
+
 const navigationItems = [
   { label: "PRICING", href: "/pricing" },
   {
     label: "DOCS",
     href: "/docs",
     hasDropdown: [
-      "Build apps",
-      "Quick start",
-      "Tutorial",
-      "How-to",
-      "Reference",
+      {label: "Build apps",href:"#"},
+      {label:"Quick start",href:"#"},
+      {label:"Tutorial",href:"#"},
+      {label:"How-to",href:"#"},
+      {label:"Reference",href:"/docs/reference"},
     ],
   },
   { label: "RESOURCES", href: "/resources" },
   { label: "ROADMAP", href: "/roadmap" },
 ];
+interface NavigationProps {
+  currentPage: string;
+}
 
-const Navigation: React.FC = () => {
+const Navigation: React.FC<NavigationProps> = ({currentPage}) => {
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -77,7 +81,7 @@ const Navigation: React.FC = () => {
         </div>
 
         {/* Desktop */}
-        <ul className="flex max-sm:hidden  items-center p-1 my-auto text-[16px] tracking-wide whitespace-nowrap rounded-3xl backdrop-blur-[10px] bg-white bg-opacity-20 min-w-[240px] text-neutral-900 max-lg:text-[12px]  max-md:max-w-full max-sm:ml-2.5">
+        <ul className="flex max-sm:hidden  items-center p-1 my-auto text-[16px] tracking-wide whitespace-nowrap rounded-3xl backdrop-blur-[10px] bg-white bg-opacity-20 min-w-[240px]  max-lg:text-[12px]  max-md:max-w-full max-sm:ml-2.5">
           {navigationItems.map((item, index) => (
             <NavigationItem
               key={index}
@@ -87,6 +91,7 @@ const Navigation: React.FC = () => {
               isOpen={openDropdown === index}
               toggleDropdown={() => toggleDropdown(index)}
               isMobile={false}
+              isCurrentPage={currentPage == item.label}
             />
           ))}
         </ul>

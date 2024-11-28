@@ -4,6 +4,7 @@ import Header from "@/components/HeaderComponents/Header";
 import Footer from "@/components/Footer";
 import PricingPlans from "@/components/pricingPlans/PricingPlans";
 import Calculation from "@/components/pricingPlans/Calculation";
+import PricingTableContainer from "@/components/pricingPlans/PricingTableContainer";
 
 const PricingPage: React.FC = () => {
   const [highlightPlan, setHighlightPlan] = useState<number | null>(null);
@@ -20,9 +21,9 @@ const PricingPage: React.FC = () => {
 
   return (
     <div className="relative px-5 max-w:[100vw] overflow-hidden max-sm:px-3">
-      <Header />
+      <Header currentPage="PRICING"/>
       <section className="flex w-full mt-10 max-xl:flex-col  max-sm:mt-4">
-        <h1 className="relative z-[1] text-[140px] tracking-tighter uppercase leading-[120px] text-neutral-900 w-[50%] max-2xl:text-[92px] max-2xl:leading-[80px] max-xl:mb-10 max-lg:text-[69px] max-lg:leading-[60px] max-md:text-[36px] max-md:leading-[36px] max-[430px]:text-[28.47px] max-[430px]:leading-[28.47px]">
+        <h1 className="relative z-[1] text-[140px] tracking-tighter uppercase leading-[120px] w-[50%] max-2xl:text-[92px] max-2xl:leading-[80px] max-xl:mb-10 max-lg:text-[69px] max-lg:leading-[60px] max-md:text-[36px] max-md:leading-[36px] max-[430px]:text-[28.47px] max-[430px]:leading-[28.47px]">
           <p className="">plans &</p>
           <p className="indent-[30%]">pricing</p>
         </h1>
@@ -40,6 +41,7 @@ const PricingPage: React.FC = () => {
           #Сomparison sheet
         </p>
       </section>
+      <PricingTableContainer />
       <Footer isMainPage={false} />
     </div>
   );

@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = ({ isMainPage="true" }) => {
         Made by IT consultants for IT consultants
       </h2>}
       {isMainPage && <EmailSignup />}
-      <LogoSVG />
+      <LogoSVG margin={isMainPage ? "mt-[8%]" : ""} />
       <div className="label-text free-area flex self-end justify-end items-center my-6 max-md:justify-start max-md:gap-3 max-sm:flex-col max-sm:my-1">
         <div className="flex gap-1">
           {links.map((item, index) => (

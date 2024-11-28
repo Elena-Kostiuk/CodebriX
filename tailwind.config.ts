@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "link-color": "rgba(196, 196, 196, 1)",
       },
       fontFamily: {
         "ibm-plex-mono": ["var(--font-ibm-plex-mono)"],
