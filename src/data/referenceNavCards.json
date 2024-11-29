@@ -1,0 +1,33 @@
+[
+    {
+      "title": "Components",
+      "description": "Reference documentation for UI components",
+      "itemCount": 24,
+      "href": "/docs/reference/components"
+    },
+    {
+      "title": "Keyboard shortcuts",
+      "description": "Learn about built-in keyboard shortcuts for the App IDE",
+      "itemCount": 16,
+      "href": "/docs/reference/keyboard-shortcuts"
+    },
+    {
+      "title": "Objects",
+      "description": "Information about the current logged-in or authenticated user of the App",
+      "itemCount": 5,
+      "href": "/docs/reference/objects"
+    },
+    {
+      "title": "CodebriX CLI",
+      "description": "A command line tool for interacting with",
+      "itemCount": 4,
+      "href": "/docs/reference/cli"
+    },
+    {
+      "title": "Others",
+      "description": "Additional items",
+      "itemCount": 10,
+      "href": "/docs/reference/others"
+    }
+  ]
+  

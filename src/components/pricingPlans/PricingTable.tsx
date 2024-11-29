@@ -19,8 +19,10 @@ const PricingTable: React.FC<PricingTableProps> = ({ title, rows, hoverStyle }) 
     3:"hover-orange"
   }
 
-  const renderedRows = rows.map((rowData, rowIndex) => (
-<tr key={`row-${rowIndex}`} className="last:border-b border-black hover:bg-gray-100">
+  const renderedRows = rows.map((rowData, rowIndex) => {
+    const hasButton = rowData.some((cell) => cell.startsWith("btn"));
+ return(
+<tr key={`row-${rowIndex}`} className={`last:border-b border-black ${!hasButton ? "hover:bg-gray-100" : ""}`}>
   {rowData.map((cell, cellIndex) => (
     <td
       key={`cell-${rowIndex}-${cellIndex}`}
@@ -50,7 +52,7 @@ const PricingTable: React.FC<PricingTableProps> = ({ title, rows, hoverStyle }) 
     </td>
   ))}
 </tr>
-  ));
+  )});
 
   return (
     <div className="">

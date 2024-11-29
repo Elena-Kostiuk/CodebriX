@@ -50,21 +50,21 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, highlight }) => {
       ref={cardRef}
       className={`relative flex flex-col justify-start p-5 mx-[10px] mb-10 min-h-[885px] rounded-3xl  ${hoverStyle} ${
         highlight ? "border-[3px] sm:top-[-40px]" : "border"
-      } border-solid border-neutral-900 text-neutral-900 max-lg:min-h-0  max-md:mt-5 max-md:mx-0`}
+      } border-solid border-neutral-900 text-neutral-900 max-lg:min-h-0  max-md:mt-5 max-md:mx-0 `}
     >
-      <div className="flex flex-col w-full h-[136px] max-lg:h-[80px]">
+      <div className="flex flex-col w-full h-[136px] max-lg:h-[80px] max-sm:h-[70px]">
         <h3>{title}</h3>
         <p className="label-text">{subtitle}</p>
       </div>
 
-      <div className="flex items-end self-start  mb-20 whitespace-nowrap max-lg:mb-10">
+      <div className="flex items-end self-start  mb-20 whitespace-nowrap max-lg:mb-10 max-sm:mb-5">
         <span className="font-robert-trial font-medium text-[140px] tracking-tighter uppercase leading-[120px] text-neutral-900 max-2xl:text-[92px] max-2xl:leading-[80px] max-lg:text-[69px] max-lg:leading-[60px] max-md:text-[36px] max-md:leading-[36px] max-md:pt-2 max-sm:pt-0 max-[430px]:text-[28.47px] max-[430px]:leading-[28.47px]">
           {price}
         </span>
         <span>€/mo</span>
       </div>
 
-      <div className="flex flex-col mt-2 mb-20 w-full">
+      <div className="flex flex-col mt-2 mb-20 w-full max-sm:mb-10">
         <p className="label-text">{additionalText}</p>
         {features.map((feature, index) => (
           <PricingFeature

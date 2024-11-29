@@ -78,7 +78,7 @@ const Calculation: React.FC<CalculationProps> = ({ setPlan }) => {
         </div>
       </div>
 
-      <p className="label-text mt-[26px]">workflow</p>
+      <p className="label-text mt-[26px] max-xl:mt-[18px] max-md:mt-[16px]">workflow</p>
     </div>
   );
 };
