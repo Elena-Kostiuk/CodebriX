@@ -38,7 +38,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, highlight }) => {
             behavior: "smooth", 
             block: "start",
           });
-        }, 1800); 
+        }, 500); 
 
         return () => clearTimeout(timer); 
       }

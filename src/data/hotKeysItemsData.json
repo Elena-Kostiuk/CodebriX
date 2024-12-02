@@ -1,0 +1,21 @@
+[
+    {
+      "title": "IDE",
+      "description": "CodebriX enables you to build web apps using a drag-and-drop interface and component library. You can connect your apps to almost any database and API, allowing your users to interact with data.",
+      "subtitle": "Keyboard shortcuts that control ",
+      "link":"the App IDE",
+      "img": "/images/ide.png"
+    },
+    {
+        "title": "Canvas",
+        "subtitle": "Keyboard shortcuts that control the ",
+        "link":"canvas",
+        "img": "/images/canvas.png"
+      },
+      {
+        "title": "Components",
+        "subtitle": "Keyboard shortcuts that control ",
+        "link":"components",
+        "img": "/images/components.png"
+      }
+    ]

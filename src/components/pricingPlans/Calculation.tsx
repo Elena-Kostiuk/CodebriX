@@ -28,8 +28,12 @@ const Calculation: React.FC<CalculationProps> = ({ setPlan }) => {
     const realValue =
       Math.round(reverseLogScale(scaleValue, min, max) / 10) * 10;
     setValue(realValue);
-    setPlan(realValue);
+   
   };
+
+  const handleSliderAfterChange = ()=>{
+    setPlan(value);
+  }
 
   return (
     <div className="flex flex-col w-[50%] gap-1 border-l-2 border-dotted border-gray-300 px-5 pt-10 max-2xl:pt-5 max-xl:border-0 max-lg:pt-0 max-xl:w-full">
@@ -48,6 +52,7 @@ const Calculation: React.FC<CalculationProps> = ({ setPlan }) => {
             step={0.01}
             value={logScale(value, min, max)}
             onChange={handleSliderChange}
+            onAfterChange={handleSliderAfterChange}
             renderTrack={(props, state) => (
               <div
                 {...props}

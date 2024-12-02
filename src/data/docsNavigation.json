@@ -1,0 +1,54 @@
+{
+  "Reference":
+[
+    {
+      "label": "Build apps",
+      "href": "/docs/build-apps"
+    },
+    {
+      "label": "Quick start",
+      "href": "/docs/quick-start"
+    },
+    {
+      "label": "Tutorial",
+      "href": "/docs/tutorial"
+    },
+    {
+      "label": "How-to",
+      "href": "/docs/how-to",
+      "hasDropdown": [
+        {
+          "label": "",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "label": "Reference",
+      "href": "#",
+      "hasDropdown": [
+        {
+          "label": "Components",
+          "href": "/docs/reference/Components"
+        },
+        {
+          "label": "Keyboard shortcuts",
+          "href": "/docs/reference/keyboard-shortcuts"
+        },
+        {
+          "label": "Objects",
+          "href": "/docs/reference/objects"
+        }
+      ]
+    }
+  ],
+
+  "KeyboardShortcuts": [
+    { "label": "IDE", "href": "/docs/reference/keyboard-shortcuts/ide"},
+        { "label": "Canvas", "href": "/docs/reference/keyboard-shortcuts/canvas"},
+        { "label": "Components", "href": "/docs/reference/keyboard-shortcuts/components"},
+        { "label": "Workspace customization", "href": "/docs/reference/keyboard-shortcuts/workspace-customization"},
+        { "label": "Code management", "href": "/docs/reference/keyboard-shortcuts/code-management"},
+        { "label": "Code", "href": "/docs/reference/keyboard-shortcuts/code"}
+  ]
+}
